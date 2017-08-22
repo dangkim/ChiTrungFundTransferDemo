@@ -1,0 +1,52 @@
+@model ChiTrung.Application.ViewModels.AtmViewModel
+
+@{
+    ViewData["Title"] = "Add new ATM";
+    SelectList banks = ViewData["Banks"] as SelectList;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="CreateAtm">
+    <div class="form-horizontal">
+        <hr />
+
+        @* Replacing classic Validation Summary to Custom ViewComponent as TagHelper *@
+        <vc:summary />
+
+        <div class="form-group">
+            <label asp-for="AtmCode" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AtmCode" class="form-control" />
+                <span asp-validation-for="AtmCode" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="AtmName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AtmName" class="form-control" />
+                <span asp-validation-for="AtmName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="BankCode" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="BankCode" class="form-control" asp-items="banks"></select>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="CreateAtm" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Back to List</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,390 @@
+@*@model IEnumerable<ChiTrung.Application.ViewModels.CustomerViewModel>*@
+@using ChiTrung.Application.ViewModels;
+@{
+    ViewData["Title"] = "Customer Management";
+    IEnumerable<CustomerViewModel> customers = ViewData["Customers"] as IEnumerable<CustomerViewModel>;
+    IEnumerable<BankViewModel> banks = ViewData["Banks"] as IEnumerable<BankViewModel>;
+    IEnumerable<AccountViewModel> accounts = ViewData["Accounts"] as IEnumerable<AccountViewModel>;
+    IEnumerable<AtmViewModel> atms = ViewData["Atms"] as IEnumerable<AtmViewModel>;
+    IEnumerable<DepositViewModel> deposit = ViewData["Deposit"] as IEnumerable<DepositViewModel>;
+    IEnumerable<WithdrawalViewModel> withdrawal = ViewData["Withdrawal"] as IEnumerable<WithdrawalViewModel>;
+
+}
+
+<div>
+    <h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="Create" class="btn btn-primary">
+                    <span title="Register New" class="glyphicon glyphicon-plus-sign"></span> Register New
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="CreateBank" class="btn btn-primary">
+                    <span title="Add new bank" class="glyphicon glyphicon-plus-sign"></span> Add new bank
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="CreateAccount" class="btn btn-primary">
+                    <span title="Add new bank account" class="glyphicon glyphicon-plus-sign"></span> Add new bank account
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="CreateAtm" class="btn btn-primary">
+                    <span title="Add new atm" class="glyphicon glyphicon-plus-sign"></span> Add new atm
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="Deposit" class="btn btn-primary">
+                    <span title="Deposit" class="glyphicon glyphicon-plus-sign"></span> Deposit
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="Withdrawal" class="btn btn-primary">
+                    <span title="Withdrawal" class="glyphicon glyphicon-plus-sign"></span> Withdrawal
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <div class="pull-left">
+                <a asp-action="FundTransfer" class="btn btn-primary">
+                    <span title="FundTransfer" class="glyphicon glyphicon-plus-sign"></span> FundTransfer
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+@* Customers *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => customers.First().Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => customers.First().Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => customers.First().BirthDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in customers)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BirthDate)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
+
+                        <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+
+                        <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+
+                        <button type="button" class="btn btn-purple viewbutton" title="History" data-id="@item.Id" data-toggle="modal" data-target="#customerHistory">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Banks *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => banks.First().BankCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => banks.First().BankName)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in banks)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BankCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BankName)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Acccounts *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => accounts.First().AccCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => accounts.First().BankCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => accounts.First().CusId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in accounts)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BankCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CusId)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Atms *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => atms.First().AtmCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => atms.First().AtmName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => atms.First().BankCode)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in atms)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AtmCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AtmName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BankCode)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Deposit *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().AccCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().Amount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().CusId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().DepCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().TransactionDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => deposit.First().WitCode)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in deposit)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CusId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DepCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransactionDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WitCode)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Withdrawal *@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => withdrawal.First().WitCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => withdrawal.First().AccCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => withdrawal.First().TransactionDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => withdrawal.First().Amount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => withdrawal.First().AtmCode)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in withdrawal)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WitCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransactionDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AtmCode)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="customerHistory" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Customer Data History</h4>
+            </div>
+            <div class="modal-body">
+                <p id="customerHistoryData"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        $(".viewbutton").on("click", function () {
+            var customerId = $(this).data('id');
+            $.ajax({
+                url: "http://localhost:52346/customer-management/customer-history/" + customerId,
+                //url: "http://ChiTrungproject.azurewebsites.net/customer-management/customer-history/" + customerId,
+                cache: false
+            }).done(function (data) {
+                var formatHtml = "<table class='table table-striped'>";
+                formatHtml += "<thead><th>Action</th><th>When</th><th>Id</th><th>Name</th><th>E-mail</th><th>Birth Date</th><th>By User</th></thead>";
+
+                for (var i = 0; i < data.length; i++) {
+                    var change = data[i];
+                    formatHtml += "<tr>";
+                    formatHtml += "<td>" + change.action + "</td>";
+                    formatHtml += "<td>" + change.when + "</td>";
+                    formatHtml += "<td>" + change.id + "</td>";
+                    formatHtml += "<td>" + change.name + "</td>";
+                    formatHtml += "<td>" + change.email + "</td>";
+                    formatHtml += "<td>" + change.birthDate + "</td>";
+                    formatHtml += "<td>" + change.who + "</td>";
+                    formatHtml += "</tr>";
+                }
+                formatHtml += "</table>";
+                $("#customerHistoryData").html(formatHtml);
+            });
+        });
+    </script>
+}
