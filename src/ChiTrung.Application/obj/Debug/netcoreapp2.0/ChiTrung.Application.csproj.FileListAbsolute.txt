@@ -1,3 +1,6 @@
+D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
 D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\appsettings.json
 D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\ChiTrung.Application.deps.json
 D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\ChiTrung.Application.dll
@@ -16,6 +19,3 @@ D:\ChiTrungProject\src\ChiTrung.Application\obj\Debug\netcoreapp2.0\ChiTrung.App
 D:\ChiTrungProject\src\ChiTrung.Application\obj\Debug\netcoreapp2.0\ChiTrung.Application.AssemblyInfo.cs
 D:\ChiTrungProject\src\ChiTrung.Application\obj\Debug\netcoreapp2.0\ChiTrung.Application.dll
 D:\ChiTrungProject\src\ChiTrung.Application\obj\Debug\netcoreapp2.0\ChiTrung.Application.pdb
-D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
-D:\ChiTrungProject\src\ChiTrung.Application\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll

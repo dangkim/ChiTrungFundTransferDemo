@@ -1,3 +1,6 @@
+D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
 D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\appsettings.json
 D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\ChiTrung.WebApi.deps.json
 D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\ChiTrung.WebApi.runtimeconfig.json
@@ -25,6 +28,3 @@ D:\ChiTrungProject\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.A
 D:\ChiTrungProject\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.AssemblyInfo.cs
 D:\ChiTrungProject\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.dll
 D:\ChiTrungProject\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.pdb
-D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
-D:\ChiTrungProject\src\ChiTrung.WebApi\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll

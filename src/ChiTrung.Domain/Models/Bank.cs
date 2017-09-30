@@ -1,5 +1,4 @@
-﻿using System;
-using ChiTrung.Domain.Core.Models;
+﻿using ChiTrung.Domain.Core.Models;
 
 namespace ChiTrung.Domain.Models
 {

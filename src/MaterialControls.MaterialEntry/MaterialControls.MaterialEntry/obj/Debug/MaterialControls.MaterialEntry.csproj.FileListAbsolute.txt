@@ -1,0 +1,16 @@
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\MaterialControls.MaterialEntry.dll
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\MaterialControls.MaterialEntry.pdb
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Core.dll
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Platform.dll
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Core.pdb
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Core.xml
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.csproj.CoreCompileInputs.cache
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.BorderlessEntry.xaml.g.cs
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.MaterialEntry.xaml.g.cs
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.dll
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.pdb
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.csprojResolveAssemblyReference.cache

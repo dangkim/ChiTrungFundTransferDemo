@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="clr-namespace:MaterialControls.MaterialEntry;assembly=MaterialControls.MaterialEntry"
+             x:Class="ChiTrung.Appointment.Views.MainView">
+
+    <StackLayout Orientation="Vertical" Spacing="16" Margin="16">
+        <!--<Label Text="Welcome to Suave Controls!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />-->
+        <material:MaterialEntry Placeholder="First Name" AccentColor="Green" Text="{Binding FirstName}"/>
+        <material:MaterialEntry Placeholder="Last Name" AccentColor="Orange" Text="{Binding LastName}"/>
+        <material:MaterialEntry Placeholder="Email" Keyboard="Email" AccentColor="Red" Text="{Binding Email}"/>
+
+        <Label Text="{Binding FirstName}"/>
+        <Label Text="{Binding LastName}"/>
+        <Label Text="{Binding Email}"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,6 @@
+D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.UWP\ChiTrung.Appointment.UWP.csproj;x86
+D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment\ChiTrung.Appointment.csproj;neutral
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry.UWP\MaterialControls.MaterialEntry.UWP.csproj;neutral
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry.csproj;neutral
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry.csproj;neutral
+D:\ChiTrungProject\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry.csproj;neutral

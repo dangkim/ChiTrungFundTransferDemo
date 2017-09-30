@@ -1,6 +1,7 @@
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\appsettings.json
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Test.deps.json
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Test.runtimeconfig.json
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Test.runtimeconfig.dev.json
@@ -9,7 +10,9 @@ D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Domain.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Data.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Domain.pdb
+D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Data.pdb
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\obj\Debug\netcoreapp2.0\ChiTrung.Infra.Test.csprojResolveAssemblyReference.cache
@@ -18,6 +21,3 @@ D:\ChiTrungProject\src\UnitTestProjectChiTrung\obj\Debug\netcoreapp2.0\ChiTrung.
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\obj\Debug\netcoreapp2.0\ChiTrung.Infra.Test.AssemblyInfo.cs
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\obj\Debug\netcoreapp2.0\ChiTrung.Infra.Test.dll
 D:\ChiTrungProject\src\UnitTestProjectChiTrung\obj\Debug\netcoreapp2.0\ChiTrung.Infra.Test.pdb
-D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\appsettings.json
-D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Data.dll
-D:\ChiTrungProject\src\UnitTestProjectChiTrung\bin\Debug\netcoreapp2.0\ChiTrung.Infra.Data.pdb

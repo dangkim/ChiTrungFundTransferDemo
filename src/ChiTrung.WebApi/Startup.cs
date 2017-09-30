@@ -70,9 +70,7 @@ namespace ChiTrung.WebApi
                 {
                     Version = "v1",
                     Title = "ChiTrung Project",
-                    Description = "ChiTrung API Swagger surface",
-                    Contact = new Contact { Name = "Eduardo Pires", Email = "contato@eduardopires.net.br", Url = "http://www.eduardopires.net.br" },
-                    License = new License { Name = "MIT", Url = "https://github.com/EduardoPires/ChiTrungProject/blob/master/LICENSE" }
+                    Description = "ChiTrung API Swagger surface"                    
                 });
             });
 

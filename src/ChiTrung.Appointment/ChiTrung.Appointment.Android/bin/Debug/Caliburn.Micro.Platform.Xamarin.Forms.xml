@@ -1,0 +1,1531 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Caliburn.Micro.Platform.Xamarin.Forms</name>
+    </assembly>
+    <members>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.Action">
+            <summary>
+              A host for action related attached properties.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Action.TargetProperty">
+            <summary>
+              A property definition representing the target of an <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> . The DataContext of the element will be set to this instance.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Action.TargetWithoutContextProperty">
+            <summary>
+              A property definition representing the target of an <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> . The DataContext of the element is not set to this instance.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Action.SetTarget(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+              Sets the target of the <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> .
+            </summary>
+            <param name="d"> The element to attach the target to. </param>
+            <param name="target"> The target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> . </param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Action.GetTarget(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> .
+            </summary>
+            <param name="d"> The element to which the target is attached. </param>
+            <returns> The target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> </returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Action.SetTargetWithoutContext(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+              Sets the target of the <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> .
+            </summary>
+            <param name="d"> The element to attach the target to. </param>
+            <param name="target"> The target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> . </param>
+            <remarks>
+              The DataContext will not be set.
+            </remarks>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Action.GetTargetWithoutContext(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> .
+            </summary>
+            <param name="d"> The element to which the target is attached. </param>
+            <returns> The target for instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> </returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Action.HasTargetSet(Xamarin.Forms.BindableObject)">
+            <summary>
+              Checks if the <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage" /> -Target was set.
+            </summary>
+            <param name="element"> DependencyObject to check </param>
+            <returns> True if Target or TargetWithoutContext was set on <paramref name="element" /> </returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext">
+            <summary>
+            The context used during the execution of an Action or its guard.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.CanExecute">
+            <summary>
+            Determines whether the action can execute.
+            </summary>
+            <remarks>Returns true if the action can execute, false otherwise.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.EventArgs">
+            <summary>
+            Any event arguments associated with the action's invocation.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Method">
+            <summary>
+            The actual method info to be invoked.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Message">
+            <summary>
+            The message being executed.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Source">
+            <summary>
+            The source from which the message originates.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Target">
+            <summary>
+            The instance on which the action is invoked.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.View">
+            <summary>
+            The view associated with the target.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Item(System.String)">
+            <summary>
+            Gets or sets additional data needed to invoke the action.
+            </summary>
+            <param name="key">The data key.</param>
+            <returns>Custom data associated with the context.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="E:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext.Disposing">
+            <summary>
+            Called when the execution context is disposed
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.Bind">
+            <summary>
+              Hosts dependency properties for binding.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Bind.ModelProperty">
+            <summary>
+              Allows binding on an existing view. Use this on root UserControls, Pages and Windows; not in a DataTemplate.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Bind.ModelWithoutContextProperty">
+            <summary>
+              Allows binding on an existing view without setting the data context. Use this from within a DataTemplate.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.GetModelWithoutContext(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the model to bind to.
+            </summary>
+            <param name = "dependencyObject">The dependency object to bind to.</param>
+            <returns>The model.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.SetModelWithoutContext(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+              Sets the model to bind to.
+            </summary>
+            <param name = "dependencyObject">The dependency object to bind to.</param>
+            <param name = "value">The model.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.GetModel(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the model to bind to.
+            </summary>
+            <param name = "dependencyObject">The dependency object to bind to.</param>
+            <returns>The model.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.SetModel(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+              Sets the model to bind to.
+            </summary>
+            <param name = "dependencyObject">The dependency object to bind to.</param>
+            <param name = "value">The model.</param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Bind.AtDesignTimeProperty">
+            <summary>
+            Allows application of conventions at design-time.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.GetAtDesignTime(Xamarin.Forms.BindableObject)">
+            <summary>
+            Gets whether or not conventions are being applied at design-time.
+            </summary>
+            <param name="dependencyObject">The ui to apply conventions to.</param>
+            <returns>Whether or not conventions are applied.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Bind.SetAtDesignTime(Xamarin.Forms.BindableObject,System.Boolean)">
+            <summary>
+            Sets whether or not do bind conventions at design-time.
+            </summary>
+            <param name="dependencyObject">The ui to apply conventions to.</param>
+            <param name="value">Whether or not to apply conventions.</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ElementConvention">
+            <summary>
+            Represents the conventions for a particular element type.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ElementConvention.ElementType">
+            <summary>
+            The type of element to which the conventions apply.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ElementConvention.GetBindableProperty">
+            <summary>
+            Gets the default property to be used in binding conventions.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ElementConvention.CreateTrigger">
+            <summary>
+            The default trigger to be used when wiring actions on this element.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ElementConvention.ParameterProperty">
+            <summary>
+            The default property to be used for parameters of this type in actions.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ElementConvention.ApplyBinding">
+            <summary>
+            Applies custom conventions for elements of this type.
+            </summary>
+            <remarks>Pass the view model type, property path, property instance, framework element and its convention.</remarks>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.IHaveParameters">
+            <summary>
+            Indicates that a message is parameterized.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.IHaveParameters.Parameters">
+            <summary>
+            Represents the parameters of a message.
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.Message">
+            <summary>
+              Host's attached properties related to routed UI messaging.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Message.SetHandler(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+              Places a message handler on this element.
+            </summary>
+            <param name="d"> The element. </param>
+            <param name="value"> The message handler. </param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Message.GetHandler(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the message handler for this element.
+            </summary>
+            <param name="d"> The element. </param>
+            <returns> The message handler. </returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Message.AttachProperty">
+            <summary>
+              A property definition representing attached triggers and messages.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Message.SetAttach(Xamarin.Forms.BindableObject,System.String)">
+            <summary>
+              Sets the attached triggers and messages.
+            </summary>
+            <param name="d"> The element to attach to. </param>
+            <param name="attachText"> The parsable attachment text. </param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Message.GetAttach(Xamarin.Forms.BindableObject)">
+            <summary>
+              Gets the attached triggers and messages.
+            </summary>
+            <param name="d"> The element that was attached to. </param>
+            <returns> The parsable attachment text. </returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.MessageBinder">
+            <summary>
+            A service that is capable of properly binding values to a method's parameters and creating instances of <see cref="T:Caliburn.Micro.IResult"/>.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.MessageBinder.SpecialValues">
+            <summary>
+            The special parameter values recognized by the message binder along with their resolvers.
+            Parameter names are case insensitive so the specified names are unique and can be used with different case variations
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.MessageBinder.CustomConverters">
+            <summary>
+            Custom converters used by the framework registered by destination type for which they will be selected.
+            The converter is passed the existing value to convert and a "context" object.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.MessageBinder.DetermineParameters(Caliburn.Micro.Xamarin.Forms.ActionExecutionContext,System.Reflection.ParameterInfo[])">
+            <summary>
+            Determines the parameters that a method should be invoked with.
+            </summary>
+            <param name="context">The action execution context.</param>
+            <param name="requiredParameters">The parameters required to complete the invocation.</param>
+            <returns>The actual parameter values.</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.MessageBinder.EvaluateParameter">
+            <summary>
+            Transforms the textual parameter into the actual parameter.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.MessageBinder.CoerceValue(System.Type,System.Object,System.Object)">
+            <summary>
+            Coerces the provided value to the destination type.
+            </summary>
+            <param name="destinationType">The destination type.</param>
+            <param name="providedValue">The provided value.</param>
+            <param name="context">An optional context value which can be used during conversion.</param>
+            <returns>The coerced value.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.MessageBinder.GetDefaultValue(System.Type)">
+            <summary>
+            Gets the default value for a type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The default value.</returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.Parser">
+            <summary>
+            Parses text into a fully functional set of <see cref="T:Xamarin.Forms.TriggerBase"/> instances with <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/>.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Parser.Parse(Xamarin.Forms.BindableObject,System.String)">
+            <summary>
+            Parses the specified message text.
+            </summary>
+            <param name="target">The target.</param>
+            <param name="text">The message text.</param>
+            <returns>The triggers parsed from the text.</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Parser.CreateTrigger">
+            <summary>
+            The function used to generate a trigger.
+            </summary>
+            <remarks>The parameters passed to the method are the the target of the trigger and string representing the trigger.</remarks>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Parser.CreateMessage(Xamarin.Forms.BindableObject,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/> by parsing out the textual dsl.
+            </summary>
+            <param name="target">The target of the message.</param>
+            <param name="messageText">The textual message dsl.</param>
+            <returns>The created message.</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Parser.InterpretMessageText">
+            <summary>
+            Function used to parse a string identified as a message.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Parser.CreateParameter">
+            <summary>
+            Function used to parse a string identified as a message parameter.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Parser.BindParameter(Xamarin.Forms.VisualElement,Caliburn.Micro.Xamarin.Forms.Parameter,System.String,System.String,Xamarin.Forms.BindingMode)">
+            <summary>
+            Creates a binding on a <see cref="T:Caliburn.Micro.Xamarin.Forms.Parameter"/>.
+            </summary>
+            <param name="target">The target to which the message is applied.</param>
+            <param name="parameter">The parameter object.</param>
+            <param name="elementName">The name of the element to bind to.</param>
+            <param name="path">The path of the element to bind to.</param>
+            <param name="bindingMode">The binding mode to use.</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ActionMessage">
+            <summary>
+            Used to send a message from the UI to a presentation model class, indicating that a particular Action should be invoked.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.EnforceGuardsDuringInvocation">
+            <summary>
+             Causes the action invocation to "double check" if the action should be invoked by executing the guard immediately before hand.
+            </summary>
+             <remarks>This is disabled by default. If multiple actions are attached to the same element, you may want to enable this so that each individaul action checks its guard regardless of how the UI state appears.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.ThrowsExceptions">
+            <summary>
+             Causes the action to throw if it cannot locate the target or the method at invocation time.
+            </summary>
+             <remarks>True by default.</remarks>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.#ctor">
+            <summary>
+            Creates an instance of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/>.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionMessage.MethodName">
+            <summary>
+            Gets or sets the name of the method to be invoked on the presentation model class.
+            </summary>
+            <value>The name of the method.</value>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionMessage.Handler">
+            <summary>
+            The handler for the action.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.ActionMessage.Parameters">
+            <summary>
+            Gets the parameters to pass as part of the method invocation.
+            </summary>
+            <value>The parameters.</value>
+        </member>
+        <member name="E:Caliburn.Micro.Xamarin.Forms.ActionMessage.Detaching">
+            <summary>
+            Occurs before the message detaches from the associated object.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.OnAttached">
+            <summary>
+             Called after the action is attached to an AssociatedObject.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.OnDetaching">
+            <summary>
+            Called when the action is being detached from its AssociatedObject, but before it has actually occurred.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.Invoke(Xamarin.Forms.VisualElement)">
+            <summary>
+            Invokes the action.
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.UpdateAvailability">
+            <summary>
+            Forces an update of the UI's Enabled/Disabled state based on the the preconditions associated with the method.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.InvokeAction">
+            <summary>
+            Invokes the action using the specified <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionExecutionContext"/>
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.ApplyAvailabilityEffect">
+            <summary>
+            Applies an availability effect, such as IsEnabled, to an element.
+            </summary>
+            <remarks>Returns a value indicating whether or not the action is available.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.GetTargetMethod">
+            <summary>
+            Finds the method on the target matching the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="target">The target.</param>
+            <returns>The matching method, if available.</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.SetMethodBinding">
+            <summary>
+            Sets the target, method and view on the context. Uses a bubbling strategy by default.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.PrepareContext">
+            <summary>
+            Prepares the action execution context for use.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ActionMessage.TryFindGuardMethod(Caliburn.Micro.Xamarin.Forms.ActionExecutionContext,System.Collections.Generic.IEnumerable{System.String})">
+             <summary>
+             Try to find a candidate for guard function, having:
+            		- a name in the form "CanXXX"
+            		- no generic parameters
+            		- a bool return type
+            		- no parameters or a set of parameters corresponding to the action method
+             </summary>
+             <param name="context">The execution context</param>
+            <param name="possibleGuardNames">Method names to look for.</param>
+            <returns>A MethodInfo, if found; null otherwise</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ActionMessage.BuildPossibleGuardNames">
+            <summary>
+            Returns the list of possible names of guard methods / properties for the given method.
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1">
+            <summary>
+            A collection that can exist as part of a behavior.
+            </summary>
+            <typeparam name="T">The type of item in the attached collection.</typeparam>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.Attach(Xamarin.Forms.BindableObject)">
+            <summary>
+            Attaches the collection.
+            </summary>
+            <param name="dependencyObject">The dependency object to attach the collection to.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.Detach">
+            <summary>
+            Detaches the collection.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.AssociatedObject">
+            <summary>
+            The currently attached object.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.OnItemAdded(Xamarin.Forms.BindableObject)">
+            <summary>
+            Called when an item is added from the collection.
+            </summary>
+            <param name="item">The item that was added.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.OnItemRemoved(Xamarin.Forms.BindableObject)">
+            <summary>
+            Called when an item is removed from the collection.
+            </summary>
+            <param name="item">The item that was removed.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.AttachedCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Raises the <see cref = "E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event with the provided arguments.
+            </summary>
+            <param name = "e">Arguments of the event being raised.</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ConventionManager">
+            <summary>
+            Used to configure the conventions used by the framework to apply bindings and create actions.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.IncludeStaticProperties">
+            <summary>
+            Indicates whether or not static properties should be included during convention name matching.
+            </summary>
+            <remarks>False by default.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.OverwriteContent">
+            <summary>
+            Indicates whether or not the Content of ContentControls should be overwritten by conventional bindings.
+            </summary>
+            <remarks>False by default.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.DefaultItemTemplate">
+            <summary>
+            The default DataTemplate used for ItemsControls when required.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.DefaultHeaderTemplate">
+            <summary>
+            The default DataTemplate used for Headered controls when required.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.Singularize">
+            <summary>
+            Changes the provided word from a plural form to a singular form.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.DerivePotentialSelectionNames">
+            <summary>
+            Derives the SelectedItem property name.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.SetBinding">
+            <summary>
+            Creates a binding and sets it on the element, applying the appropriate conventions.
+            </summary>
+            <param name="viewModelType"></param>
+            <param name="path"></param>
+            <param name="property"></param>
+            <param name="element"></param>
+            <param name="convention"></param>
+            <param name="bindableProperty"></param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyBindingMode">
+            <summary>
+            Applies the appropriate binding mode to the binding.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyValidation">
+            <summary>
+            Determines whether or not and what type of validation to enable on the binding.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyValueConverter">
+            <summary>
+            Determines whether a value converter is is needed and applies one to the binding.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyStringFormat">
+            <summary>
+            Determines whether a custom string format is needed and applies it to the binding.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyUpdateSourceTrigger">
+            <summary>
+            Determines whether a custom update source trigger should be applied to the binding.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.AddElementConvention``1(Xamarin.Forms.BindableProperty,System.String,System.String)">
+            <summary>
+            Adds an element convention.
+            </summary>
+            <typeparam name="T">The type of element.</typeparam>
+            <param name="bindableProperty">The default property for binding conventions.</param>
+            <param name="parameterProperty">The default property for action parameters.</param>
+            <param name="eventName">The default event to trigger actions.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.AddElementConvention(Caliburn.Micro.Xamarin.Forms.ElementConvention)">
+            <summary>
+            Adds an element convention.
+            </summary>
+            <param name="convention"></param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.GetElementConvention(System.Type)">
+            <summary>
+            Gets an element convention for the provided element type.
+            </summary>
+            <param name="elementType">The type of element to locate the convention for.</param>
+            <returns>The convention if found, null otherwise.</returns>
+            <remarks>Searches the class hierarchy for conventions.</remarks>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.HasBinding(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty)">
+            <summary>
+            Determines whether a particular dependency property already has a binding on the provided element.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.SetBindingWithoutBindingOverwrite(System.Type,System.String,System.Reflection.PropertyInfo,Xamarin.Forms.VisualElement,Caliburn.Micro.Xamarin.Forms.ElementConvention,Xamarin.Forms.BindableProperty)">
+            <summary>
+            Creates a binding and sets it on the element, guarding against pre-existing bindings.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.SetBindingWithoutBindingOrValueOverwrite(System.Type,System.String,System.Reflection.PropertyInfo,Xamarin.Forms.VisualElement,Caliburn.Micro.Xamarin.Forms.ElementConvention,Xamarin.Forms.BindableProperty)">
+            <summary>
+            Creates a binding and set it on the element, guarding against pre-existing bindings and pre-existing values.
+            </summary>
+            <param name="viewModelType"></param>
+            <param name="path"></param>
+            <param name="property"></param>
+            <param name="element"></param>
+            <param name="convention"></param>
+            <param name="bindableProperty"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyItemTemplate``1(Xamarin.Forms.ItemsView{``0},System.Reflection.PropertyInfo)">
+            <summary>
+            Attempts to apply the default item template to the items control.
+            </summary>
+            <param name="itemsControl">The items control.</param>
+            <param name="property">The collection property.</param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ConfigureSelectedItem">
+            <summary>
+            Configures the selected item convention.
+            </summary>
+            <param name="selector">The element that has a SelectedItem property.</param>
+            <param name="selectedItemProperty">The SelectedItem property.</param>
+            <param name="viewModelType">The view model type.</param>
+            <param name="path">The property path.</param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ConventionManager.ConfigureSelectedItemBinding">
+            <summary>
+            Configures the SelectedItem binding for matched selection path.
+            </summary>
+            <param name="selector">The element that has a SelectedItem property.</param>
+            <param name="selectedItemProperty">The SelectedItem property.</param>
+            <param name="viewModelType">The view model type.</param>
+            <param name="selectionPath">The property path.</param>
+            <param name="binding">The binding to configure.</param>
+            <returns>A bool indicating whether to apply binding</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.ApplyHeaderTemplate(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty,System.Type)">
+            <summary>
+            Applies a header template based on <see cref="T:Caliburn.Micro.IHaveDisplayName"/>
+            </summary>
+            <param name="element"></param>
+            <param name="headerTemplateProperty"></param>
+            <param name="headerTemplateSelectorProperty"> </param>
+            <param name="viewModelType"></param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ConventionManager.GetPropertyCaseInsensitive(System.Type,System.String)">
+            <summary>
+            Gets a property by name, ignoring case and searching all interfaces.
+            </summary>
+            <param name="type">The type to inspect.</param>
+            <param name="propertyName">The property to search for.</param>
+            <returns>The property or null if not found.</returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.IAttachedObject">
+            <summary>
+            Interaface usually from the Interactivity SDK's included here for completeness.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.IAttachedObject.Attach(Xamarin.Forms.BindableObject)">
+            <summary>
+            Attached the specified dependency object
+            </summary>
+            <param name="dependencyObject"></param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.IAttachedObject.Detach">
+            <summary>
+            Detach from the previously attached object.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.IAttachedObject.AssociatedObject">
+            <summary>
+            The currently attached object.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Caliburn.Micro.Xamarin.Forms.INavigationService" -->
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.GoBackAsync(System.Boolean)">
+            <summary>
+            Asynchronously removes the top <see cref="T:Xamarin.Forms.Page"/> from the navigation stack, with optional animation.
+            </summary>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.NavigateToViewAsync(System.Type,System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view onto the navigation stack, with optional animation.
+            </summary>
+            <param name="viewType">The type of the view</param>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.NavigateToViewAsync``1(System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view onto the navigation stack, with optional animation.
+            </summary>
+            <typeparam name="T">The type of the view</typeparam>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>  
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.NavigateToViewModelAsync(System.Type,System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view for the given view model onto the navigation stack, with optional animation.
+            </summary>
+            <param name="viewModelType">The type of the view model</param>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.NavigateToViewModelAsync``1(System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a page for the given view model onto the navigation stack, with optional animation.
+            </summary>
+            <typeparam name="T">The type of the view model</typeparam>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.INavigationService.GoBackToRootAsync(System.Boolean)">
+            <summary>
+            Pops all but the root <see cref="T:Xamarin.Forms.Page"/> off the navigation stack.
+            </summary>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.NavigationExtensions">
+            <summary>
+            Extension methods for <see cref="T:Caliburn.Micro.Xamarin.Forms.INavigationService"/>
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationExtensions.For``1(Caliburn.Micro.Xamarin.Forms.INavigationService)">
+            <summary>
+            Creates a Uri builder based on a view model type.
+            </summary>
+            <typeparam name="TViewModel">The type of the view model.</typeparam>
+            <param name="navigationService">The navigation service.</param>
+            <returns>The builder.</returns>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.NavigateHelper`1">
+            <summary>
+            Builds a Uri in a strongly typed fashion, based on a ViewModel.
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigateHelper`1.WithParam``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)">
+            <summary>
+            Adds a query string parameter to the Uri.
+            </summary>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="property">The property.</param>
+            <param name="value">The property value.</param>
+            <returns>Itself</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigateHelper`1.AttachTo(Caliburn.Micro.Xamarin.Forms.INavigationService)">
+            <summary>
+            Attaches a navigation servies to this builder.
+            </summary>
+            <param name="navigationService">The navigation service.</param>
+            <returns>Itself</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigateHelper`1.Navigate(System.Boolean)">
+            <summary>
+            Navigates to the Uri represented by this builder.
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter">
+            <summary>
+            Adapater around NavigationPage that implements INavigationService
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.#ctor(Xamarin.Forms.NavigationPage)">
+            <summary>
+            Instantiates new instance of NavigationPageAdapter
+            </summary>
+            <param name="navigationPage">The navigation page to adapat</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.CreateContentPage(Xamarin.Forms.ContentView,System.Object)">
+            <summary>
+            Allow Xamarin to navigate to a ViewModel backed by a view which is of type <see cref="T:Xamarin.Forms.ContentView"/> by adapting the result
+            to a <see cref="T:Xamarin.Forms.ContentPage"/>.
+            </summary>
+            <param name="view">The view to be adapted</param>
+            <param name="viewModel">The view model which is bound to the view</param>
+            <returns>The adapted ContentPage</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.GoBackAsync(System.Boolean)">
+            <summary>
+            Asynchronously removes the top <see cref="T:Xamarin.Forms.Page"/> from the navigation stack, with optional animation.
+            </summary>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.GoBackToRootAsync(System.Boolean)">
+            <summary>
+            Pops all but the root <see cref="T:Xamarin.Forms.Page"/> off the navigation stack.
+            </summary>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.NavigateToViewModelAsync(System.Type,System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view for the given view model onto the navigation stack, with optional animation.
+            </summary>
+            <param name="viewModelType">The type of the view model</param>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.NavigateToViewModelAsync``1(System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a page for the given view model onto the navigation stack, with optional animation.
+            </summary>
+            <typeparam name="T">The type of the view model</typeparam>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.NavigateToViewAsync(System.Type,System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view onto the navigation stack, with optional animation.
+            </summary>
+            <param name="viewType">The type of the view</param>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.NavigateToViewAsync``1(System.Object,System.Boolean)">
+            <summary>
+             A task for asynchronously pushing a view onto the navigation stack, with optional animation.
+            </summary>
+            <typeparam name="T">The type of the view</typeparam>
+            <param name="parameter">The paramter to pass to the view model</param>
+            <param name="animated">Animate the transition</param>
+            <returns>The asynchrous task representing the transition</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.NavigationPageAdapter.TryInjectParameters(System.Object,System.Object)">
+            <summary>
+            Attempts to inject query string parameters from the view into the view model.
+            </summary>
+            <param name="viewModel"> The view model.</param>
+            <param name="parameter"> The parameter.</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.View">
+            <summary>
+            Hosts attached properties related to view models.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.IsLoadedProperty">
+            <summary>
+            A dependency property which allows the framework to track whether a certain element has already been loaded in certain scenarios.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.IsScopeRootProperty">
+            <summary>
+            A dependency property which marks an element as a name scope root.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.ApplyConventionsProperty">
+            <summary>
+            A dependency property which allows the override of convention application behavior.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.ContextProperty">
+            <summary>
+            A dependency property for assigning a context to a particular portion of the UI.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.ModelProperty">
+            <summary>
+            A dependency property for attaching a model to the UI.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.IsGeneratedProperty">
+            <summary>
+            Used by the framework to indicate that this element was generated.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.ExecuteOnLoad(Xamarin.Forms.VisualElement,Caliburn.Micro.RoutedEventHandler)">
+            <summary>
+            Executes the handler immediately if the element is loaded, otherwise wires it to the Loaded event.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+            <returns>true if the handler was executed immediately; false otherwise</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.ExecuteOnUnload(Xamarin.Forms.VisualElement,Caliburn.Micro.RoutedEventHandler)">
+            <summary>
+            Executes the handler when the element is unloaded.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.ExecuteOnLayoutUpdated(Xamarin.Forms.VisualElement,System.EventHandler)">
+            <summary>
+            Executes the handler the next time the elements's LayoutUpdated event fires.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.View.GetFirstNonGeneratedView">
+            <summary>
+            Used to retrieve the root, non-framework-created view.
+            </summary>
+            <param name="view">The view to search.</param>
+            <returns>The root element that was not created by the framework.</returns>
+            <remarks>In certain instances the services create UI elements.
+            For example, if you ask the window manager to show a UserControl as a dialog, it creates a window to host the UserControl in.
+            The WindowManager marks that element as a framework-created element so that it can determine what it created vs. what was intended by the developer.
+            Calling GetFirstNonGeneratedView allows the framework to discover what the original element was. 
+            </remarks>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.GetApplyConventions(Xamarin.Forms.BindableObject)">
+            <summary>
+            Gets the convention application behavior.
+            </summary>
+            <param name="d">The element the property is attached to.</param>
+            <returns>Whether or not to apply conventions.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.SetApplyConventions(Xamarin.Forms.BindableObject,System.Nullable{System.Boolean})">
+            <summary>
+            Sets the convention application behavior.
+            </summary>
+            <param name="d">The element to attach the property to.</param>
+            <param name="value">Whether or not to apply conventions.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.SetModel(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="d">The element to attach the model to.</param>
+            <param name="value">The model.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.GetModel(Xamarin.Forms.BindableObject)">
+            <summary>
+            Gets the model.
+            </summary>
+            <param name="d">The element the model is attached to.</param>
+            <returns>The model.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.GetContext(Xamarin.Forms.BindableObject)">
+            <summary>
+            Gets the context.
+            </summary>
+            <param name="d">The element the context is attached to.</param>
+            <returns>The context.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.View.SetContext(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+            Sets the context.
+            </summary>
+            <param name="d">The element to attach the context to.</param>
+            <param name="value">The context.</param>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.View.InDesignMode">
+            <summary>
+            Gets a value that indicates whether the process is running in design mode.
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ViewLocator">
+            <summary>
+              A strategy for determining which view to use for a given model.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.NameTransformer">
+            <summary>
+             Used to transform names.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.ContextSeparator">
+            <summary>
+              Separator used when resolving View names for context instances.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.ConfigureTypeMappings(Caliburn.Micro.TypeMappingConfiguration)">
+            <summary>
+            Specifies how type mappings are created, including default type mappings. Calling this method will
+            clear all existing name transformation rules and create new default type mappings according to the
+            configuration.
+            </summary>
+            <param name="config">An instance of TypeMappingConfiguration that provides the settings for configuration</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddDefaultTypeMapping(System.String)">
+            <summary>
+            Adds a default type mapping using the standard namespace mapping convention
+            </summary>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.RegisterViewSuffix(System.String)">
+            <summary>
+            This method registers a View suffix or synonym so that View Context resolution works properly.
+            It is automatically called internally when calling AddNamespaceMapping(), AddDefaultTypeMapping(),
+            or AddTypeMapping(). It should not need to be called explicitly unless a rule that handles synonyms
+            is added directly through the NameTransformer.
+            </summary>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View".</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddTypeMapping(System.String,System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping based on namespace RegEx replace and filter patterns
+            </summary>
+            <param name="nsSourceReplaceRegEx">RegEx replace pattern for source namespace</param>
+            <param name="nsSourceFilterRegEx">RegEx filter pattern for source namespace</param>
+            <param name="nsTargetsRegEx">Array of RegEx replace values for target namespaces</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddTypeMapping(System.String,System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping based on namespace RegEx replace and filter patterns
+            </summary>
+            <param name="nsSourceReplaceRegEx">RegEx replace pattern for source namespace</param>
+            <param name="nsSourceFilterRegEx">RegEx filter pattern for source namespace</param>
+            <param name="nsTargetRegEx">RegEx replace value for target namespace</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddNamespaceMapping(System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping based on simple namespace mapping
+            </summary>
+            <param name="nsSource">Namespace of source type</param>
+            <param name="nsTargets">Namespaces of target type as an array</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddNamespaceMapping(System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping based on simple namespace mapping
+            </summary>
+            <param name="nsSource">Namespace of source type</param>
+            <param name="nsTarget">Namespace of target type</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddSubNamespaceMapping(System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping by substituting one subnamespace for another
+            </summary>
+            <param name="nsSource">Subnamespace of source type</param>
+            <param name="nsTargets">Subnamespaces of target type as an array</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.AddSubNamespaceMapping(System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping by substituting one subnamespace for another
+            </summary>
+            <param name="nsSource">Subnamespace of source type</param>
+            <param name="nsTarget">Subnamespace of target type</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.GetOrCreateViewType">
+            <summary>
+              Retrieves the view from the IoC container or tries to create it if not found.
+            </summary>
+            <remarks>
+              Pass the type of view as a parameter and recieve an instance of the view.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.ModifyModelTypeAtDesignTime">
+            <summary>
+            Modifies the name of the type to be used at design time.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.TransformName">
+            <summary>
+            Transforms a ViewModel type name into all of its possible View type names. Optionally accepts an instance
+            of context object
+            </summary>
+            <returns>Enumeration of transformed names</returns>
+            <remarks>Arguments:
+            typeName = The name of the ViewModel type being resolved to its companion View.
+            context = An instance of the context or null.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.LocateTypeForModelType">
+            <summary>
+              Locates the view type based on the specified model type.
+            </summary>
+            <returns>The view.</returns>
+            <remarks>
+              Pass the model type, display location (or null) and the context instance (or null) as parameters and receive a view type.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.LocateForModelType">
+            <summary>
+              Locates the view for the specified model type.
+            </summary>
+            <returns>The view.</returns>
+            <remarks>
+              Pass the model type, display location (or null) and the context instance (or null) as parameters and receive a view instance.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.LocateForModel">
+            <summary>
+              Locates the view for the specified model instance.
+            </summary>
+            <returns>The view.</returns>
+            <remarks>
+              Pass the model instance, display location (or null) and the context (or null) as parameters and receive a view instance.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewLocator.DeterminePackUriFromType">
+            <summary>
+            Transforms a view type into a pack uri.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewLocator.InitializeComponent(System.Object)">
+            <summary>
+              When a view does not contain a code-behind file, we need to automatically call InitializeCompoent.
+            </summary>
+            <param name = "element">The element to initialize</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ViewModelBinder">
+            <summary>
+            Binds a view to a view model.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.ApplyConventionsByDefault">
+            <summary>
+            Gets or sets a value indicating whether to apply conventions by default.
+            </summary>
+            <value>
+            	<c>true</c> if conventions should be applied by default; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.ConventionsAppliedProperty">
+            <summary>
+            Indicates whether or not the conventions have already been applied to the view.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.ShouldApplyConventions(Xamarin.Forms.VisualElement)">
+            <summary>
+            Determines whether a view should have conventions applied to it.
+            </summary>
+            <param name="view">The view to check.</param>
+            <returns>Whether or not conventions should be applied to the view.</returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.BindProperties">
+            <summary>
+            Creates data bindings on the view's controls based on the provided properties.
+            </summary>
+            <remarks>Parameters include named Elements to search through and the type of view model to determine conventions for. Returns unmatched elements.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.BindActions">
+            <summary>
+            Attaches instances of <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/> to the view's controls based on the provided methods.
+            </summary>
+            <remarks>Parameters include the named elements to search through and the type of view model to determine conventions for. Returns unmatched elements.</remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.HandleUnmatchedElements">
+            <summary>
+            Allows the developer to add custom handling of named elements which were not matched by any default conventions.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelBinder.Bind">
+             <summary>
+             Binds the specified viewModel to the view.
+             </summary>
+            <remarks>Passes the the view model, view and creation context (or null for default) to use in applying binding.</remarks>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.ViewModelLocator">
+            <summary>
+              A strategy for determining which view model to use for a given view.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.NameTransformer">
+            <summary>
+             Used to transform names.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.InterfaceCaptureGroupName">
+            <summary>
+            The name of the capture group used as a marker for rules that return interface types
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.ConfigureTypeMappings(Caliburn.Micro.TypeMappingConfiguration)">
+            <summary>
+            Specifies how type mappings are created, including default type mappings. Calling this method will
+            clear all existing name transformation rules and create new default type mappings according to the
+            configuration.
+            </summary>
+            <param name="config">An instance of TypeMappingConfiguration that provides the settings for configuration</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddDefaultTypeMapping(System.String)">
+            <summary>
+            Adds a default type mapping using the standard namespace mapping convention
+            </summary>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddTypeMapping(System.String,System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping based on namespace RegEx replace and filter patterns
+            </summary>
+            <param name="nsSourceReplaceRegEx">RegEx replace pattern for source namespace</param>
+            <param name="nsSourceFilterRegEx">RegEx filter pattern for source namespace</param>
+            <param name="nsTargetsRegEx">Array of RegEx replace values for target namespaces</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddTypeMapping(System.String,System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping based on namespace RegEx replace and filter patterns
+            </summary>
+            <param name="nsSourceReplaceRegEx">RegEx replace pattern for source namespace</param>
+            <param name="nsSourceFilterRegEx">RegEx filter pattern for source namespace</param>
+            <param name="nsTargetRegEx">RegEx replace value for target namespace</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddNamespaceMapping(System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping based on simple namespace mapping
+            </summary>
+            <param name="nsSource">Namespace of source type</param>
+            <param name="nsTargets">Namespaces of target type as an array</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddNamespaceMapping(System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping based on simple namespace mapping
+            </summary>
+            <param name="nsSource">Namespace of source type</param>
+            <param name="nsTarget">Namespace of target type</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddSubNamespaceMapping(System.String,System.String[],System.String)">
+            <summary>
+            Adds a standard type mapping by substituting one subnamespace for another
+            </summary>
+            <param name="nsSource">Subnamespace of source type</param>
+            <param name="nsTargets">Subnamespaces of target type as an array</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.AddSubNamespaceMapping(System.String,System.String,System.String)">
+            <summary>
+            Adds a standard type mapping by substituting one subnamespace for another
+            </summary>
+            <param name="nsSource">Subnamespace of source type</param>
+            <param name="nsTarget">Subnamespace of target type</param>
+            <param name="viewSuffix">Suffix for type name. Should  be "View" or synonym of "View". (Optional)</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.MakeInterface(System.String)">
+            <summary>
+              Makes a type name into an interface name.
+            </summary>
+            <param name = "typeName">The part.</param>
+            <returns></returns>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.TransformName">
+            <summary>
+            Transforms a View type name into all of its possible ViewModel type names. Accepts a flag
+            to include or exclude interface types.
+            </summary>
+            <returns>Enumeration of transformed names</returns>
+            <remarks>Arguments:
+            typeName = The name of the View type being resolved to its companion ViewModel.
+            includeInterfaces = Flag to indicate if interface types are included
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.LocateTypeForViewType">
+            <summary>
+              Determines the view model type based on the specified view type.
+            </summary>
+            <returns>The view model type.</returns>
+            <remarks>
+              Pass the view type and receive a view model type. Pass true for the second parameter to search for interfaces.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.LocateForViewType">
+            <summary>
+              Locates the view model for the specified view type.
+            </summary>
+            <returns>The view model.</returns>
+            <remarks>
+              Pass the view type as a parameter and receive a view model instance.
+            </remarks>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.ViewModelLocator.LocateForView">
+            <summary>
+              Locates the view model for the specified view instance.
+            </summary>
+            <returns>The view model.</returns>
+            <remarks>
+              Pass the view instance as a parameters and receive a view model instance.
+            </remarks>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.FormsApplication">
+            <summary>
+            A slimmed down version of the normal Caliburn Application for Xamarin Forms, used to register the navigation service and set up the initial view.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.Initialize">
+            <summary>
+            Start the framework.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.FormsApplication.RootNavigationPage">
+            <summary>
+            The root frame of the application.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.CreateApplicationPage">
+            <summary>
+            Creates the root frame used by the application.
+            </summary>
+            <returns>The frame.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.PrepareViewFirst">
+            <summary>
+            Allows you to trigger the creation of the RootFrame from Configure if necessary.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.PrepareViewFirst(Xamarin.Forms.NavigationPage)">
+            <summary>
+            Override this to register a navigation service.
+            </summary>
+            <param name="navigationPage">The root frame of the application.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.DisplayRootView(System.Type)">
+            <summary>
+            Creates the root frame and navigates to the specified view.
+            </summary>
+            <param name="viewType">The view type to navigate to.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.DisplayRootView``1">
+            <summary>
+            Creates the root frame and navigates to the specified view.
+            </summary>
+            <typeparam name="T">The view type to navigate to.</typeparam>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.DisplayRootViewFor(System.Type)">
+            <summary>
+            Locates the view model, locates the associate view, binds them and shows it as the root view.
+            </summary>
+            <param name="viewModelType">The view model type.</param>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.FormsApplication.DisplayRootViewFor``1">
+            <summary>
+            Locates the view model, locates the associate view, binds them and shows it as the root view.
+            </summary>
+            <typeparam name="T">The view model type.</typeparam>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.Parameter">
+            <summary>
+            Represents a parameter of an <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/>.
+            </summary>
+        </member>
+        <member name="F:Caliburn.Micro.Xamarin.Forms.Parameter.ValueProperty">
+            <summary>
+            A dependency property representing the parameter's value.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.Parameter.Value">
+            <summary>
+            Gets or sets the value of the parameter.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.Parameter.Owner">
+            <summary>
+            Gets or sets the owner.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.Parameter.MakeAwareOf(Caliburn.Micro.Xamarin.Forms.ActionMessage)">
+            <summary>
+            Makes the parameter aware of the <see cref="T:Caliburn.Micro.Xamarin.Forms.ActionMessage"/> that it's attached to.
+            </summary>
+            <param name="owner">The action message.</param>
+        </member>
+        <member name="T:Caliburn.Micro.Xamarin.Forms.TriggerActionBase`1">
+            <summary>
+            Helper class to try and abtract the differences in TriggerAction across platforms
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Caliburn.Micro.Xamarin.Forms.TriggerActionBase`1.AssociatedObject">
+            <summary>
+            Gets or sets the object to which this <see cref="T:Caliburn.Micro.Xamarin.Forms.TriggerActionBase`1"/> is attached. 
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.TriggerActionBase`1.OnAttached">
+            <summary>
+             Called after the action is attached to an AssociatedObject.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.Xamarin.Forms.TriggerActionBase`1.OnDetaching">
+            <summary>
+            Called when the action is being detached from its AssociatedObject, but before it has actually occurred.
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.DependencyPropertyHelper">
+            <summary>
+            Class that abstracts the differences in creating a DepedencyProperty / BindableProperty on the different platforms.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.DependencyPropertyHelper.RegisterAttached(System.String,System.Type,System.Type,System.Object,Caliburn.Micro.PropertyChangedCallback)">
+            <summary>
+            Register an attached dependency / bindable property
+            </summary>
+            <param name="name">The property name</param>
+            <param name="propertyType">The property type</param>
+            <param name="ownerType">The owner type</param>
+            <param name="defaultValue">The default value</param>
+            <param name="propertyChangedCallback">Callback to executed on property changed</param>
+            <returns>The registred attached dependecy property</returns>
+        </member>
+        <member name="M:Caliburn.Micro.DependencyPropertyHelper.Register(System.String,System.Type,System.Type,System.Object,Caliburn.Micro.PropertyChangedCallback)">
+            <summary>
+            Register a dependency / bindable property
+            </summary>
+            <param name="name">The property name</param>
+            <param name="propertyType">The property type</param>
+            <param name="ownerType">The owner type</param>
+            <param name="defaultValue">The default value</param>
+            <param name="propertyChangedCallback">Callback to executed on property changed</param>
+            <returns>The registred dependecy property</returns>
+        </member>
+        <member name="T:Caliburn.Micro.FormsPlatformProvider">
+            <summary>
+            A <see cref="T:Caliburn.Micro.IPlatformProvider"/> implementation for the Xamarin.Forms platfrom.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.#ctor(Caliburn.Micro.IPlatformProvider)">
+            <summary>
+            Creates an instance of <see cref="T:Caliburn.Micro.FormsPlatformProvider"/>.
+            </summary>
+            <param name="platformProvider">The existing platform provider (from the host platform) to encapsulate</param>
+        </member>
+        <member name="P:Caliburn.Micro.FormsPlatformProvider.InDesignMode">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.BeginOnUIThread(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.OnUIThreadAsync(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.OnUIThread(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.GetFirstNonGeneratedView(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.ExecuteOnFirstLoad(System.Object,System.Action{System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.ExecuteOnLayoutUpdated(System.Object,System.Action{System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:Caliburn.Micro.FormsPlatformProvider.GetViewCloseAction(System.Object,System.Collections.Generic.ICollection{System.Object},System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="T:Caliburn.Micro.DependencyPropertyChangedEventArgs">
+            <summary>
+            Provides data for a PropertyChangedCallback implementation that is invoked when a dependency property changes its value. Also provides event data for the Control.IsEnabledChanged event and any other event that uses the DependencyPropertyChangedEventHandler delegate.
+            </summary>
+        </member>
+        <member name="M:Caliburn.Micro.DependencyPropertyChangedEventArgs.#ctor(System.Object,System.Object,Xamarin.Forms.BindableProperty)">
+            <summary>
+            
+            </summary>
+            <param name="newValue"></param>
+            <param name="oldValue"></param>
+            <param name="property"></param>
+        </member>
+        <member name="P:Caliburn.Micro.DependencyPropertyChangedEventArgs.NewValue">
+            <summary>
+            Gets the value of the dependency property after the reported change.
+            </summary>
+            
+            <returns>
+            The dependency property value after the change.
+            </returns>
+        </member>
+        <member name="P:Caliburn.Micro.DependencyPropertyChangedEventArgs.OldValue">
+            <summary>
+            Gets the value of the dependency property before the reported change.
+            </summary>
+            
+            <returns>
+            The dependency property value before the change.
+            </returns>
+        </member>
+        <member name="P:Caliburn.Micro.DependencyPropertyChangedEventArgs.Property">
+            <summary>
+            Gets the identifier for the dependency property where the value change occurred.
+            </summary>
+            
+            <returns>
+            The identifier field of the dependency property where the value change occurred.
+            </returns>
+        </member>
+        <member name="T:Caliburn.Micro.PropertyChangedCallback">
+            <summary>
+            Helper type for abstracting differences between dependency / bindable properties.
+            </summary>
+            <param name="d">The dependency object</param>
+            <param name="e">The property changed event args.</param>
+        </member>
+        <member name="T:Caliburn.Micro.RoutedEventArgs">
+            <summary>
+            Helper class with abstracting Xamarin Forms.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.RoutedEventArgs.OriginalSource">
+            <summary>
+            Source of the event
+            </summary>
+        </member>
+        <member name="T:Caliburn.Micro.RoutedEventHandler">
+            <summary>
+            Helper class with abstracting Xamarin Forms.
+            </summary>
+            <param name="sender">The sender of the event</param>
+            <param name="e">The event args</param>
+        </member>
+    </members>
+</doc>
