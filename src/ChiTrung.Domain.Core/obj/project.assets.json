@@ -915,11 +915,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungProject\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
+      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
       "projectName": "ChiTrung.Domain.Core",
-      "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
+      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
       "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungProject\\src\\ChiTrung.Domain.Core\\obj\\",
+      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

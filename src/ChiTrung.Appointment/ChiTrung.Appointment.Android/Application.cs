@@ -4,8 +4,11 @@ using System.Reflection;
 using Android.App;
 using Android.Runtime;
 using Caliburn.Micro;
+using ChiTrung.AppointmentManager.ViewModels;
+using ChiTrung.AppointmentManager.Services;
+using ChiTrung.AppointmentManager.RequestProviders;
 
-namespace ChiTrung.Appointment.Droid
+namespace ChiTrung.AppointmentManager.Droid
 {
     [Application]
     public class Application : CaliburnApplication
@@ -34,7 +37,8 @@ namespace ChiTrung.Appointment.Droid
             // CRITICAL! make sure our Xamarin.Forms App 
             // can only be initilized once!
             _container.Singleton<App>();
-
+            _container.Singleton<IAccountService, AccountService>();
+            _container.Singleton<IRequestProvider, RequestProvider>();
             // TODO: Register any Platform-Specific abstractions here
         }
 
@@ -45,7 +49,8 @@ namespace ChiTrung.Appointment.Droid
             return new[]
             {
                 GetType().Assembly,
-                typeof (MainViewModel).Assembly
+                //typeof (MainViewModel).Assembly,
+                typeof (RegisterViewModel).Assembly
             };
         }
 

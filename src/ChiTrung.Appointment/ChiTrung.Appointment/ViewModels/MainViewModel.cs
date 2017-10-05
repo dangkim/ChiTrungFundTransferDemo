@@ -2,7 +2,7 @@
 using Caliburn.Micro;
 using System.Runtime.CompilerServices;
 
-namespace ChiTrung.Appointment
+namespace ChiTrung.AppointmentManager.ViewModels
 {
     public class MainViewModel : Screen
     {

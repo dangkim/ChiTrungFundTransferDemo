@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material="clr-namespace:MaterialControls.MaterialEntry;assembly=MaterialControls.MaterialEntry"
-             x:Class="ChiTrung.Appointment.Views.LoginView">
+             x:Class="ChiTrung.AppointmentManager.Views.LoginView">
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightGray">
             <Grid Padding="100,100,100,100">
@@ -12,7 +12,7 @@
                 </Grid.RowDefinitions>
 
                 <material:MaterialEntry Grid.Row="0" Placeholder="User Name" AccentColor="Green" Text="{Binding UserName}"/>
-                <material:MaterialEntry Grid.Row="1" Placeholder="Password" AccentColor="Orange" Text="{Binding Password}"/>
+                <material:MaterialEntry Grid.Row="1" Placeholder="Password" IsPassword="True" AccentColor="Orange" Text="{Binding Password}"/>
             </Grid>
 
         </StackLayout>

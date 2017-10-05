@@ -51,7 +51,7 @@ namespace ChiTrung.WebApi.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("account/register")]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public async Task<IActionResult> Register([FromBody] MobileRegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -59,21 +59,33 @@ namespace ChiTrung.WebApi.Controllers
                 return Response(model);
             }
 
-            var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser { UserName = model.UserName };
 
-            var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (result.Succeeded)
+            try
             {
-                // User claim for write customers data
-                await _userManager.AddClaimAsync(user, new Claim("Customers", "Write"));
+                var result = await _userManager.CreateAsync(user, model.Password);
 
-                await _signInManager.SignInAsync(user, false);
-                _logger.LogInformation(3, "User created a new account with password.");
-                return Response(model);
+                if (result.Succeeded)
+                {
+                    // User claim for write customers data
+                    //await _userManager.AddClaimAsync(user, new Claim("Customers", "Write"));
+
+                    // User claim for write employee data
+                    await _userManager.AddClaimAsync(user, new Claim("Employee", "Write"));
+
+                    await _signInManager.SignInAsync(user, false);
+                    _logger.LogInformation(3, "User created a new account with password.");
+                    return Response(model);
+                }
+
+                AddIdentityErrors(result);
             }
+            catch (System.Exception ex)
+            {
+                throw;
+            }           
 
-            AddIdentityErrors(result);
+            
             return Response(model);
         }
     }

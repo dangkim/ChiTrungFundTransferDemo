@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ChiTrung.Appointment.Views
+namespace ChiTrung.AppointmentManager.Views
 {
     public partial class LoginView
     {

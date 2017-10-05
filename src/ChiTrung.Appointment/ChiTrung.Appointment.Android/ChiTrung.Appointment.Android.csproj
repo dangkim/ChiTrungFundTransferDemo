@@ -114,6 +114,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -141,9 +142,9 @@
       <Project>{8046eb1a-2e80-426a-a431-8bc94e7173b5}</Project>
       <Name>MaterialControls.MaterialEntry</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ChiTrung.Appointment\ChiTrung.Appointment.csproj">
-      <Project>{5701d011-20f5-4942-81c8-0b4f092694da}</Project>
-      <Name>ChiTrung.Appointment</Name>
+    <ProjectReference Include="..\ChiTrung.Appointment\ChiTrung.AppointmentManager.csproj">
+      <Project>{BECA036F-8376-4837-96A6-E06D2B18229E}</Project>
+      <Name>ChiTrung.AppointmentManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

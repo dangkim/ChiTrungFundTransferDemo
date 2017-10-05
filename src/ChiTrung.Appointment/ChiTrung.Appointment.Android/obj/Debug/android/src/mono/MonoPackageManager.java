@@ -116,9 +116,11 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"ChiTrung.Appointment.dll",
+		"ChiTrung.AppointmentManager.dll",
 		"MaterialControls.MaterialEntry.Android.dll",
 		"MaterialControls.MaterialEntry.dll",
+		"Newtonsoft.Json.dll",
+		"IdentityModel.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

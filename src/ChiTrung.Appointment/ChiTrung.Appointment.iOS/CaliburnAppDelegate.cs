@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Caliburn.Micro;
+using ChiTrung.AppointmentManager.ViewModels;
 
-namespace ChiTrung.Appointment.iOS
+namespace ChiTrung.AppointmentManager.iOS
 {
     class CaliburnAppDelegate : CaliburnApplicationDelegate
     {

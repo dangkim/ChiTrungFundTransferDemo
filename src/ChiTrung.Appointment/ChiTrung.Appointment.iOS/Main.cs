@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ChiTrung.Appointment.iOS
+namespace ChiTrung.AppointmentManager.iOS
 {
     public class Application
     {

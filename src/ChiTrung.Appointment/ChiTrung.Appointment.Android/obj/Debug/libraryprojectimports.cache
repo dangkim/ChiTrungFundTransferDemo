@@ -2,9 +2,9 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Caliburn.Micro.Platform\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Caliburn.Micro.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Caliburn.Micro.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -13,8 +13,8 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Caliburn.Micro.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\ChiTrungProject\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Caliburn.Micro.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

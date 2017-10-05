@@ -23,9 +23,9 @@
     <key>MinimumOSVersion</key>
     <string>8.0</string>
     <key>CFBundleDisplayName</key>
-    <string>ChiTrung.Appointment</string>
+    <string>ChiTrung.AppointmentManager</string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.ChiTrung.Appointment</string>
+    <string>com.yourcompany.ChiTrung.AppointmentManager</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>CFBundleIconFiles</key>

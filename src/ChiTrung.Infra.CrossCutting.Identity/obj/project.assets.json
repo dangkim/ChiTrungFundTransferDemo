@@ -8230,11 +8230,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj",
+      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj",
       "projectName": "ChiTrung.Infra.CrossCutting.Identity",
-      "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj",
+      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj",
       "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Identity\\obj\\",
+      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8253,8 +8253,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\ChiTrungProject\\src\\ChiTrung.Domain\\ChiTrung.Domain.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Domain\\ChiTrung.Domain.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain\\ChiTrung.Domain.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain\\ChiTrung.Domain.csproj"
             }
           }
         }

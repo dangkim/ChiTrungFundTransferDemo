@@ -21,11 +21,24 @@ namespace MaterialControls.MaterialEntry
             matEntry.HiddenLabel.Text = (string)newval;
         });
 
+        public static BindableProperty ValidationTextProperty = BindableProperty.Create(nameof(ValidationText), typeof(string), typeof(MaterialEntry), defaultBindingMode: BindingMode.TwoWay, propertyChanged: (bindable, oldVal, newval) =>
+        {
+            var matEntry = (MaterialEntry)bindable;
+            matEntry.HiddenValidationLabel.Text = (string)newval;
+        });
+
+        public static BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid), typeof(bool), typeof(MaterialEntry), defaultValue: true, propertyChanged: (bindable, oldVal, newval) =>
+        {
+            var matEntry = (MaterialEntry)bindable;
+            matEntry.HiddenValidationLabel.IsVisible = (bool)newval;
+        });
+
         public static BindableProperty IsPasswordProperty = BindableProperty.Create(nameof(IsPassword), typeof(bool), typeof(MaterialEntry), defaultValue: false, propertyChanged: (bindable, oldVal, newVal) =>
         {
             var matEntry = (MaterialEntry)bindable;
             matEntry.EntryField.IsPassword = (bool)newVal;
         });
+
         public static BindableProperty KeyboardProperty = BindableProperty.Create(nameof(Keyboard), typeof(Keyboard), typeof(MaterialEntry), defaultValue: Keyboard.Default, propertyChanged: (bindable, oldVal, newVal) =>
         {
             var matEntry = (MaterialEntry)bindable;
@@ -33,7 +46,22 @@ namespace MaterialControls.MaterialEntry
         });
 
         public static BindableProperty AccentColorProperty = BindableProperty.Create(nameof(AccentColor), typeof(Color), typeof(MaterialEntry), defaultValue: Color.Accent);
+
+        public static BindableProperty ValidationColorProperty = BindableProperty.Create(nameof(ValidationColor), typeof(Color), typeof(MaterialEntry), defaultValue: Color.Accent);
+
         public Color AccentColor
+        {
+            get
+            {
+                return (Color)GetValue(AccentColorProperty);
+            }
+            set
+            {
+                SetValue(AccentColorProperty, value);
+            }
+        }
+
+        public Color ValidationColor
         {
             get
             {
@@ -91,15 +119,47 @@ namespace MaterialControls.MaterialEntry
             }
         }
 
+        public string ValidationText
+        {
+            get
+            {
+                return (string)GetValue(ValidationTextProperty);
+            }
+            set
+            {
+                SetValue(ValidationTextProperty, value);
+            }
+        }
+
+        public bool IsValid
+        {
+            get
+            {
+                return (bool)GetValue(IsValidProperty);
+            }
+            set
+            {
+                SetValue(IsValidProperty, value);
+            }
+        }
+
         public MaterialEntry()
         {
             InitializeComponent();
+
+            HiddenValidationLabel.IsVisible = false;
+            HiddenValidationLabel.TextColor = ValidationColor;
+
+            HiddenLabel.IsVisible = false;
+
             EntryField.BindingContext = this;
             EntryField.Focused += async (s, a) =>
             {
                 HiddenBottomBorder.BackgroundColor = AccentColor;
+
                 HiddenLabel.TextColor = AccentColor;
                 HiddenLabel.IsVisible = true;
+
                 if (string.IsNullOrEmpty(EntryField.Text))
                 {
                     // animate both at the same time

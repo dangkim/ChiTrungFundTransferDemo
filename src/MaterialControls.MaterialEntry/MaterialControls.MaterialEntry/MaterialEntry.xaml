@@ -8,11 +8,13 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="1"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label x:Name="HiddenLabel" FontSize="10" IsVisible="False" Margin="0"/>
-            <local:BorderlessEntry x:Name="EntryField" Text="{Binding Text, Mode=TwoWay}" Margin="0,12,0,0"/>
+            <local:BorderlessEntry x:Name="EntryField" Text="{Binding Text, Mode=TwoWay}" Margin="0,12,0,0"/>            
             <BoxView x:Name="BottomBorder" BackgroundColor="Gray"  Grid.Row="1" HeightRequest="1" Margin="0" HorizontalOptions="FillAndExpand"/>
             <BoxView x:Name="HiddenBottomBorder" BackgroundColor="Gray" Grid.Row="1" HeightRequest="1" Margin="0" WidthRequest="0" HorizontalOptions="Center"/>
+            <Label x:Name="HiddenValidationLabel" FontSize="10" IsVisible="{Binding IsValid, Mode=TwoWay}" Margin="0" Grid.Row="2"/>
         </Grid>
     </ContentView.Content>
 </ContentView>

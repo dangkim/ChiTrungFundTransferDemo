@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ChiTrung.Appointment.Views
+namespace ChiTrung.AppointmentManager.Views
 {
     public partial class MainView
     {

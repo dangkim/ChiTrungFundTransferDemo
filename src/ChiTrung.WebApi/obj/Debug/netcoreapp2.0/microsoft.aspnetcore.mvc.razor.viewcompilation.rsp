@@ -1,0 +1,5 @@
+D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=ChiTrung.WebApi
+--content-root=D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi
+--file=

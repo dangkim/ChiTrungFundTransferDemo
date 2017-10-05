@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="clr-namespace:MaterialControls.MaterialEntry;assembly=MaterialControls.MaterialEntry"
+             xmlns:cm="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             x:Class="ChiTrung.AppointmentManager.Views.RegisterView">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray">
+            <Label Text="Register Screen"></Label>
+            <Grid Padding="100,100,100,100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <material:MaterialEntry Grid.Row="0" Placeholder="User Name" IsValid="{Binding IsUserNameInValid}" ValidationText="{Binding ValidationUserNameText}" ValidationColor="Red"  AccentColor="Green" Text="{Binding UserName}"/>
+                <material:MaterialEntry Grid.Row="1" Placeholder="Password" IsValid="{Binding IsPasswordInValid}" ValidationText="{Binding ValidationPasswordText}" IsPassword="True" AccentColor="Orange" Text="{Binding Password}"/>
+                <Button Grid.Row="2" cm:Message.Attach="RegisterAsync" Text="Done"/>         
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

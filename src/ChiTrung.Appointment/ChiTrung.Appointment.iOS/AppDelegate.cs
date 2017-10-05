@@ -3,7 +3,7 @@ using UIKit;
 using MaterialControls.MaterialEntry.iOS;
 using Caliburn.Micro;
 
-namespace ChiTrung.Appointment.iOS
+namespace ChiTrung.AppointmentManager.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ChiTrung.Appointment">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ChiTrung.AppointmentManager">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="ChiTrung.Appointment.Android" android:name="md5be1c0a1a7d06a8bdd87db0b3f13156dc.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="ChiTrung.Appointment" android:theme="@style/MainTheme" android:name="md5be1c0a1a7d06a8bdd87db0b3f13156dc.MainActivity">
+  <application android:label="ChiTrung.AppointmentManager.Android" android:name="md598f0e454452c3a154e6b6feb5c79beb8.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="ChiTrung.AppointmentManager" android:theme="@style/MainTheme" android:name="md598f0e454452c3a154e6b6feb5c79beb8.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.ChiTrung.Appointment.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.ChiTrung.AppointmentManager.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.ChiTrung.Appointment" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.ChiTrung.AppointmentManager" />
       </intent-filter>
     </receiver>
   </application>

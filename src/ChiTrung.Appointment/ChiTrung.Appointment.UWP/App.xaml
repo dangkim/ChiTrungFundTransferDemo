@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="ChiTrung.Appointment.UWP.App"
+    x:Class="ChiTrung.AppointmentManager.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ChiTrung.Appointment.UWP"
+    xmlns:local="using:ChiTrung.AppointmentManager.UWP"
     RequestedTheme="Light">
 
 </Application>

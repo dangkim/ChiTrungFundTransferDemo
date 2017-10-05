@@ -26080,11 +26080,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
+      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
       "projectName": "MaterialControls.MaterialEntry.UWP",
-      "projectPath": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
+      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
       "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\obj\\",
+      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -26101,8 +26101,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
             }
           }
         }

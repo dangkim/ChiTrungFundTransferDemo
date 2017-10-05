@@ -1,11 +1,11 @@
-ChiTrung.Appointment.Droid.Application, ChiTrung.Appointment.Android;md5be1c0a1a7d06a8bdd87db0b3f13156dc.Application
-ChiTrung.Appointment.Droid.Application, ChiTrung.Appointment.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5be1c0a1a7d06a8bdd87db0b3f13156dc.Application
-ChiTrung.Appointment.Droid.Application;md5be1c0a1a7d06a8bdd87db0b3f13156dc.Application
-chitrung.appointment.droid.Application;md5be1c0a1a7d06a8bdd87db0b3f13156dc.Application
-ChiTrung.Appointment.Droid.MainActivity, ChiTrung.Appointment.Android;md5be1c0a1a7d06a8bdd87db0b3f13156dc.MainActivity
-ChiTrung.Appointment.Droid.MainActivity, ChiTrung.Appointment.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5be1c0a1a7d06a8bdd87db0b3f13156dc.MainActivity
-ChiTrung.Appointment.Droid.MainActivity;md5be1c0a1a7d06a8bdd87db0b3f13156dc.MainActivity
-chitrung.appointment.droid.MainActivity;md5be1c0a1a7d06a8bdd87db0b3f13156dc.MainActivity
+ChiTrung.AppointmentManager.Droid.Application, ChiTrung.Appointment.Android;md598f0e454452c3a154e6b6feb5c79beb8.Application
+ChiTrung.AppointmentManager.Droid.Application, ChiTrung.Appointment.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f0e454452c3a154e6b6feb5c79beb8.Application
+ChiTrung.AppointmentManager.Droid.Application;md598f0e454452c3a154e6b6feb5c79beb8.Application
+chitrung.appointmentmanager.droid.Application;md598f0e454452c3a154e6b6feb5c79beb8.Application
+ChiTrung.AppointmentManager.Droid.MainActivity, ChiTrung.Appointment.Android;md598f0e454452c3a154e6b6feb5c79beb8.MainActivity
+ChiTrung.AppointmentManager.Droid.MainActivity, ChiTrung.Appointment.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f0e454452c3a154e6b6feb5c79beb8.MainActivity
+ChiTrung.AppointmentManager.Droid.MainActivity;md598f0e454452c3a154e6b6feb5c79beb8.MainActivity
+chitrung.appointmentmanager.droid.MainActivity;md598f0e454452c3a154e6b6feb5c79beb8.MainActivity
 Caliburn.Micro.ActivityLifecycleCallbackHandler, Caliburn.Micro.Platform;md5829c04c8adcda52a360bc26da6c6d4c8.ActivityLifecycleCallbackHandler
 Caliburn.Micro.ActivityLifecycleCallbackHandler, Caliburn.Micro.Platform, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null;md5829c04c8adcda52a360bc26da6c6d4c8.ActivityLifecycleCallbackHandler
 Caliburn.Micro.ActivityLifecycleCallbackHandler;md5829c04c8adcda52a360bc26da6c6d4c8.ActivityLifecycleCallbackHandler

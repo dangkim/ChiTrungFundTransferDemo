@@ -1,9 +1,10 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Xamarin.Forms;
-using ChiTrung.Appointment.Views;
+using ChiTrung.AppointmentManager.ViewModels;
+using ChiTrung.AppointmentManager.Views;
 using Xamarin.Forms;
 
-namespace ChiTrung.Appointment
+namespace ChiTrung.AppointmentManager
 {
     public class App : FormsApplication
     {
@@ -18,10 +19,12 @@ namespace ChiTrung.Appointment
             // TODO: Register additional viewmodels and services
             container
                 .PerRequest<MainViewModel>()
-                .PerRequest<LoginViewModel>();            
+                .PerRequest<LoginViewModel>()
+                .PerRequest<RegisterViewModel>();
 
-            //DisplayRootView<MainView>();
-            DisplayRootView<LoginView>();
+            //DisplayRootViewFor<MainViewModel>();
+            DisplayRootViewFor<RegisterViewModel>();
+            //DisplayRootView<LoginView>();
         }
 
         protected override void PrepareViewFirst(NavigationPage navigationPage)

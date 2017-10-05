@@ -1,0 +1,11 @@
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\bin\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.deps.json
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\bin\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\bin\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\bin\Release\netcoreapp2.0\ChiTrung.Domain.Core.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\bin\Release\netcoreapp2.0\ChiTrung.Domain.Core.pdb
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.csprojResolveAssemblyReference.cache
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.AssemblyInfo.cs
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Release\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb

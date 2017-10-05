@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace ChiTrung.Appointment.UWP
+namespace ChiTrung.AppointmentManager.UWP
 {
     public sealed partial class MainPage
     {
@@ -22,7 +22,7 @@ namespace ChiTrung.Appointment.UWP
         {
             this.InitializeComponent();
             BorderlessEntryRenderer.Init();
-            LoadApplication(new ChiTrung.Appointment.App());
+            LoadApplication(new ChiTrung.AppointmentManager.App());
         }
     }
 }

@@ -2,7 +2,7 @@
 using Caliburn.Micro;
 using System.Runtime.CompilerServices;
 
-namespace ChiTrung.Appointment
+namespace ChiTrung.AppointmentManager.ViewModels
 {
     public class LoginViewModel : Screen
     {
@@ -11,7 +11,7 @@ namespace ChiTrung.Appointment
 
         public LoginViewModel()
         {
-            //UserName = "Hello World!";
+            UserName = "Hello World!";
         }
 
         public string UserName

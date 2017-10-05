@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="e82e3311-c1cc-41d3-8fa6-702b5cfca580" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>ChiTrung.Appointment.UWP</DisplayName>
+    <DisplayName>ChiTrung.AppointmentManager.UWP</DisplayName>
     <PublisherDisplayName>Trung</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="ChiTrung.Appointment.UWP.App">
+      EntryPoint="ChiTrung.AppointmentManager.UWP.App">
       <uap:VisualElements
-        DisplayName="ChiTrung.Appointment.UWP"
+        DisplayName="ChiTrung.AppointmentManager.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="ChiTrung.Appointment.UWP"
+        Description="ChiTrung.AppointmentManager.UWP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

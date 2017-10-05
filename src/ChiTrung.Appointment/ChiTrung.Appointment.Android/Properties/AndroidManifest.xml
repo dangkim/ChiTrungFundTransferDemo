@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ChiTrung.Appointment">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ChiTrung.AppointmentManager">
 	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="ChiTrung.Appointment.Android"></application>
+	<application android:label="ChiTrung.AppointmentManager.Android"></application>
 </manifest>

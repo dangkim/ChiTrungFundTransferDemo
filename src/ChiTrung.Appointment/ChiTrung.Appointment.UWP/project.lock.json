@@ -2206,7 +2206,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -4538,7 +4538,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -6906,7 +6906,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -9247,7 +9247,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -11624,7 +11624,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -13965,7 +13965,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -16342,7 +16342,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "ChiTrung.Appointment/1.0.0": {
+      "ChiTrung.AppointmentManager/1.0.0": {
         "type": "project",
         "dependencies": {
           "MaterialControls.MaterialEntry": "1.0.0"
@@ -22795,10 +22795,10 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "ChiTrung.Appointment/1.0.0": {
+    "ChiTrung.AppointmentManager/1.0.0": {
       "type": "project",
-      "path": "../ChiTrung.Appointment/ChiTrung.Appointment.csproj",
-      "msbuildProject": "../ChiTrung.Appointment/ChiTrung.Appointment.csproj"
+      "path": "../ChiTrung.Appointment/ChiTrung.AppointmentManager.csproj",
+      "msbuildProject": "../ChiTrung.Appointment/ChiTrung.AppointmentManager.csproj"
     },
     "MaterialControls.MaterialEntry/1.0.0": {
       "type": "project",
@@ -22824,12 +22824,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
+      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
       "projectName": "ChiTrung.Appointment.UWP",
-      "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
-      "projectJsonPath": "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\project.json",
+      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
+      "projectJsonPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\project.json",
       "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\obj\\",
+      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22842,14 +22842,14 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj"
             },
-            "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
             },
-            "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.Appointment.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.Appointment.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj"
             }
           }
         }

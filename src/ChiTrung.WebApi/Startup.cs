@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ChiTrung.Domain.Options;
 using ChiTrung.Infra.CrossCutting.Identity.Authorization;
 using ChiTrung.Infra.CrossCutting.Identity.Data;
 using ChiTrung.Infra.CrossCutting.Identity.Models;
@@ -39,10 +40,15 @@ namespace ChiTrung.WebApi
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // register the `Data:DefaultConnection` configuration section as
+            // a configuration for the `DatabaseOptions` type
+            services.Configure<DatabaseOptions>(Configuration.GetSection("Data:DefaultConnection"));
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 

@@ -45,6 +45,35 @@
           "lib/netstandard1.6/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Dapper/1.50.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Data.SqlClient": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.Emit.Lightweight": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XmlDocument": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        }
+      },
       "FluentValidation/7.1.1": {
         "type": "package",
         "dependencies": {
@@ -5485,6 +5514,7 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "ChiTrung.Domain": "1.0.0",
+          "Dapper": "1.50.2",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.EntityFrameworkCore.Design": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
@@ -5528,6 +5558,23 @@
         "lib/net451/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard1.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard1.6/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "Dapper/1.50.2": {
+      "sha512": "6VcCiiOxVhgMwgMCuQuaff8I5IyDamrzeOjuUH1iMExh8R5TJqwkVCpwdVJGQdwSCqWsQA/PerrrK7T6mONthQ==",
+      "type": "package",
+      "path": "dapper/1.50.2",
+      "files": [
+        "dapper.1.50.2.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net40/Dapper.dll",
+        "lib/net40/Dapper.xml",
+        "lib/net45/Dapper.dll",
+        "lib/net45/Dapper.xml",
+        "lib/net451/Dapper.dll",
+        "lib/net451/Dapper.xml",
+        "lib/netstandard1.3/Dapper.dll",
+        "lib/netstandard1.3/Dapper.xml"
       ]
     },
     "FluentValidation/7.1.1": {
@@ -13956,6 +14003,7 @@
       "ChiTrung.Infra.CrossCutting.IoC >= 1.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 2.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
+      "Microsoft.AspNetCore.Server.IISIntegration >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Swashbuckle.AspNetCore >= 1.0.0"
     ]
@@ -13970,11 +14018,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungProject\\src\\ChiTrung.WebApi\\ChiTrung.WebApi.csproj",
+      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.WebApi\\ChiTrung.WebApi.csproj",
       "projectName": "ChiTrung.WebApi",
-      "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.WebApi\\ChiTrung.WebApi.csproj",
+      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.WebApi\\ChiTrung.WebApi.csproj",
       "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungProject\\src\\ChiTrung.WebApi\\obj\\",
+      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13993,17 +14041,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Identity\\ChiTrung.Infra.CrossCutting.Identity.csproj"
             },
-            "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.IoC\\ChiTrung.Infra.CrossCutting.IoC.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.IoC\\ChiTrung.Infra.CrossCutting.IoC.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.IoC\\ChiTrung.Infra.CrossCutting.IoC.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.IoC\\ChiTrung.Infra.CrossCutting.IoC.csproj"
             },
-            "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Bus\\ChiTrung.Infra.CrossCutting.Bus.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Infra.CrossCutting.Bus\\ChiTrung.Infra.CrossCutting.Bus.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Bus\\ChiTrung.Infra.CrossCutting.Bus.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Infra.CrossCutting.Bus\\ChiTrung.Infra.CrossCutting.Bus.csproj"
             },
-            "D:\\ChiTrungProject\\src\\ChiTrung.Application\\ChiTrung.Application.csproj": {
-              "projectPath": "D:\\ChiTrungProject\\src\\ChiTrung.Application\\ChiTrung.Application.csproj"
+            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Application\\ChiTrung.Application.csproj": {
+              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Application\\ChiTrung.Application.csproj"
             }
           }
         }
@@ -14024,6 +14072,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "2.0.1"
+          },
+          "Microsoft.AspNetCore.Server.IISIntegration": {
+            "target": "Package",
+            "version": "2.0.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

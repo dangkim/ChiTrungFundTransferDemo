@@ -48,7 +48,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{5D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiTrung.Appointment.Android", "src\ChiTrung.Appointment\ChiTrung.Appointment.Android\ChiTrung.Appointment.Android.csproj", "{23CDEB71-0EFC-4A7E-8066-4EF0642D1A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiTrung.Appointment", "src\ChiTrung.Appointment\ChiTrung.Appointment\ChiTrung.Appointment.csproj", "{BECA036F-8376-4837-96A6-E06D2B18229E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiTrung.AppointmentManager", "src\ChiTrung.Appointment\ChiTrung.Appointment\ChiTrung.AppointmentManager.csproj", "{BECA036F-8376-4837-96A6-E06D2B18229E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiTrung.Appointment.UWP", "src\ChiTrung.Appointment\ChiTrung.Appointment.UWP\ChiTrung.Appointment.UWP.csproj", "{9AA37906-AEC6-4B1F-B8AF-BBEC0A2D130C}"
 EndProject
