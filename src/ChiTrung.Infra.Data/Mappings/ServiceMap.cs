@@ -19,7 +19,7 @@ namespace ChiTrung.Infra.Data.Mappings
 
             builder.Property(e => e.ServiceName)
                 .HasColumnType("varchar(128)")
-                .HasMaxLength(64)
+                .HasMaxLength(128)
                 .IsRequired();
 
             builder.Property(e => e.Duration)

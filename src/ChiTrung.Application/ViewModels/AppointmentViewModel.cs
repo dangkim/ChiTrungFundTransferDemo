@@ -71,6 +71,6 @@ namespace ChiTrung.Application.ViewModels
 
         [Required(ErrorMessage = "The IsDeleted is Required")]
         [DisplayName("IsDeleted")]
-        public string IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
