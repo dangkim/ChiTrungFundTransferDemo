@@ -41,6 +41,65 @@ namespace ChiTrung.Infra.Data.Migrations
                     b.ToTable("Account");
                 });
 
+            modelBuilder.Entity("ChiTrung.Domain.Models.Appointment", b =>
+                {
+                    b.Property<int>("AppointmentId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CancellationReason")
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<bool>("Cancelled")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ClientId");
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("varchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("ContactMobile")
+                        .IsRequired()
+                        .HasColumnType("varchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<DateTime>("DateCreated");
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("float");
+
+                    b.Property<int>("EmployeeCreated");
+
+                    b.Property<int>("EmployeeId");
+
+                    b.Property<DateTime>("EndTime");
+
+                    b.Property<DateTime>("EndTimeExpected");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("PriceExpected")
+                        .HasColumnType("float");
+
+                    b.Property<decimal>("PriceFinal")
+                        .HasColumnType("float");
+
+                    b.Property<decimal>("PriceFull")
+                        .HasColumnType("float");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<DateTime>("StartTime");
+
+                    b.HasKey("AppointmentId");
+
+                    b.ToTable("Appointment");
+                });
+
             modelBuilder.Entity("ChiTrung.Domain.Models.Atm", b =>
                 {
                     b.Property<string>("AtmCode")
@@ -78,6 +137,36 @@ namespace ChiTrung.Infra.Data.Migrations
                     b.HasKey("BankCode");
 
                     b.ToTable("Bank");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.Client", b =>
+                {
+                    b.Property<int>("ClientId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("varchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("ContactMail")
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("ContactMobile")
+                        .IsRequired()
+                        .HasColumnType("varchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("ClientId");
+
+                    b.ToTable("Client");
                 });
 
             modelBuilder.Entity("ChiTrung.Domain.Models.Customer", b =>
@@ -137,6 +226,131 @@ namespace ChiTrung.Infra.Data.Migrations
                     b.HasKey("DepCode");
 
                     b.ToTable("Deposit");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.Employee", b =>
+                {
+                    b.Property<int>("EmployeeId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("varchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("varchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("EmployeeId");
+
+                    b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.Schedule", b =>
+                {
+                    b.Property<int>("ScheduleId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("EmployeeId");
+
+                    b.Property<DateTime>("From");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<DateTime>("To");
+
+                    b.HasKey("ScheduleId");
+
+                    b.ToTable("Schedule");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.Service", b =>
+                {
+                    b.Property<int>("ServiceId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Duration");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<string>("ServiceName")
+                        .IsRequired()
+                        .HasColumnType("varchar(128)")
+                        .HasMaxLength(128);
+
+                    b.HasKey("ServiceId");
+
+                    b.ToTable("Service");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.ServiceBooked", b =>
+                {
+                    b.Property<int>("ServiceBookedId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AppointmentId");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<int>("ServiceId");
+
+                    b.HasKey("ServiceBookedId");
+
+                    b.ToTable("ServiceBooked");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.ServiceProvided", b =>
+                {
+                    b.Property<int>("ServiceProvidedId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AppointmentId");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<int>("ServiceId");
+
+                    b.HasKey("ServiceProvidedId");
+
+                    b.ToTable("ServiceProvided");
                 });
 
             modelBuilder.Entity("ChiTrung.Domain.Models.Withdrawal", b =>

@@ -34,7 +34,8 @@ namespace ChiTrung.Infra.Data.Repository
                     FROM schedule, employee
                     WHERE schedule.employee_id = employee.id
                     AND schedule.from >= @desired_time
-                    AND schedule.to <= @desired_time"
+                    AND schedule.to <= @desired_time 
+                    AND IsDeleted == false"
                         , new { desiredTime }
                     );
 
@@ -57,7 +58,8 @@ namespace ChiTrung.Infra.Data.Repository
                      WHERE appointment.employee_id = employee.id
                      AND appointment.start_time >= @desired_time
                      AND appointment.end_time_expected <= @desired_time
-                     AND appointment.employee_id = @desired_employee"
+                     AND appointment.employee_id = @desired_employee
+                     AND IsDeleted == false"
                         , new { desiredTime, desiredEmpolyee }
                     );
 
@@ -76,6 +78,7 @@ namespace ChiTrung.Infra.Data.Repository
                      FROM  ( SELECT @desired_time AS ""desired_time"", COUNT(*) AS employees_working FROM schedule
                             WHERE schedule.from >= @desired_time
                             AND schedule.to <= @desired_time
+                            AND schedule.IsDeleted == false
                      ) AS a
                      LEFT JOIN
                      (
@@ -84,6 +87,7 @@ namespace ChiTrung.Infra.Data.Repository
                         WHERE appointment.employee_id = employee.id
                         AND appointment.start_time >= @desired_time
                         AND appointment.end_time_expected <= @desired_time
+                        AND appointment.IsDeleted == false
                      ) AS b ON a.desired_time = b.desired_time"
                         , new { desiredTime }
                      );
@@ -103,7 +107,9 @@ namespace ChiTrung.Infra.Data.Repository
                      FROM appointment, client
                      WHERE appointment.client_id = client.id
                      AND Date(appointment.start_time) = Date(@desired_time)
-                     AND appointment.employee_id = @selected_employee"
+                     AND appointment.employee_id = @selected_employee
+                     AND appointment.IsDeleted == false
+                     AND client.IsDeleted == false"
                         , new { desiredTime, desiredEmpolyee }
                      );
 

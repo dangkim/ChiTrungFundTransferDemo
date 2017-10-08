@@ -15,6 +15,13 @@ namespace ChiTrung.Infra.Data.Context
         public DbSet<Atm> Atm { get; set; }
         public DbSet<Deposit> Deposit { get; set; }
         public DbSet<Withdrawal> Withdrawal { get; set; }
+        public DbSet<Schedule> Schedule { get; set; }
+        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Client> Client { get; set; }
+        public DbSet<Appointment> Appointment { get; set; }
+        public DbSet<Service> Service { get; set; }
+        public DbSet<ServiceProvided> ServiceProvided { get; set; }
+        public DbSet<ServiceBooked> ServiceBooked { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,6 +31,13 @@ namespace ChiTrung.Infra.Data.Context
             modelBuilder.AddConfiguration(new AtmMap());
             modelBuilder.AddConfiguration(new DepositMap());
             modelBuilder.AddConfiguration(new WithdrawalMap());
+            modelBuilder.AddConfiguration(new ScheduleMap());
+            modelBuilder.AddConfiguration(new EmployeeMap());
+            modelBuilder.AddConfiguration(new ClientMap());
+            modelBuilder.AddConfiguration(new AppointmentMap());
+            modelBuilder.AddConfiguration(new ServiceMap());
+            modelBuilder.AddConfiguration(new ServiceProvidedMap());
+            modelBuilder.AddConfiguration(new ServiceBookedMap());
 
             base.OnModelCreating(modelBuilder);
         }

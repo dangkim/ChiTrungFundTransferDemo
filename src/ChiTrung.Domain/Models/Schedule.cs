@@ -7,7 +7,7 @@ namespace ChiTrung.Domain.Models
 {
     public class Schedule : Entity
     {
-        public Schedule(string employeeId, DateTime from, DateTime to, bool isDeleted = false)
+        public Schedule(int employeeId, DateTime from, DateTime to, bool isDeleted = false)
         {
             EmployeeId = employeeId;
             From = from;
@@ -21,7 +21,7 @@ namespace ChiTrung.Domain.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ScheduleId { get; private set; }
 
-        public string EmployeeId { get; private set; }
+        public int EmployeeId { get; private set; }
 
         public DateTime From { get; private set; }
 
