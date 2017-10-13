@@ -9,6 +9,7 @@ namespace ChiTrung.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Customer, CustomerViewModel>();
+            CreateMap<Client, ClientViewModel>();
             CreateMap<Bank, BankViewModel>();
             CreateMap<Account, AccountViewModel>();
             CreateMap<Atm, AtmViewModel>();

@@ -47,7 +47,9 @@ namespace ChiTrung.WebApi
         {
             // register the `Data:DefaultConnection` configuration section as
             // a configuration for the `DatabaseOptions` type
-            services.Configure<DatabaseOptions>(Configuration.GetSection("Data:DefaultConnection"));
+            //services.Configure<DatabaseOptions>(Configuration.GetSection("ConnectionStrings:DefaultConnection"));
+
+            services.AddSingleton(_ => Configuration);
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

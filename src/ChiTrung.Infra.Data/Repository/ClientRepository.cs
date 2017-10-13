@@ -10,19 +10,22 @@ using Microsoft.Extensions.Options;
 using ChiTrung.Domain.Options;
 using System.Data.SqlClient;
 using System;
+using Microsoft.Extensions.Configuration;
 
 namespace ChiTrung.Infra.Data.Repository
 {
     public class ClientRepository : Repository<Client>, IClientRepository
     {
-        private readonly DatabaseOptions _options;
+        //private readonly DatabaseOptions _options;
         private string _connectionString = string.Empty;
+        private readonly IConfiguration _config;
 
-        public ClientRepository(ChiTrungContext context, IOptions<DatabaseOptions> databaseOptions)
+        public ClientRepository(ChiTrungContext context, IConfiguration config)
             : base(context)
         {
-            _options = databaseOptions.Value;
-            _connectionString = !string.IsNullOrWhiteSpace(_options.ConnectionString) ? _options.ConnectionString : throw new ArgumentNullException(nameof(_options.ConnectionString));
+            this._config = config;
+            //_options = databaseOptions.Value;
+            _connectionString = this._config.GetConnectionString("DefaultConnection");
         }
 
         public async Task<Client> GetClientById(int clientId)
@@ -40,7 +43,7 @@ namespace ChiTrung.Infra.Data.Repository
                   @"SELECT ClientName, ContactMobile, ContactMail
                     FROM  Client
                     WHERE ClientName like @value 
-                    AND IsDeleted == false"
+                    AND IsDeleted = 0"
                         , new { value = "%" + name + "%" }
                     );
 

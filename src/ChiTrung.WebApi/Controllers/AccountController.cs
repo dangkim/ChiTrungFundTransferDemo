@@ -71,7 +71,7 @@ namespace ChiTrung.WebApi.Controllers
                     //await _userManager.AddClaimAsync(user, new Claim("Customers", "Write"));
 
                     // User claim for write employee data
-                    await _userManager.AddClaimAsync(user, new Claim("Employee", "Write"));
+                    //await _userManager.AddClaimAsync(user, new Claim("Employee", "Write"));
 
                     await _signInManager.SignInAsync(user, false);
                     _logger.LogInformation(3, "User created a new account with password.");

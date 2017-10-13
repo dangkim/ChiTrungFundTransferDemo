@@ -58,3 +58,5 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung
 D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.pdb
 D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.Properties.Resources.resources
+D:\ChiTrungFundTransferDemo\src\ChiTrung.WebApi\obj\Debug\netcoreapp2.0\ChiTrung.WebApi.csproj.GenerateResource.Cache

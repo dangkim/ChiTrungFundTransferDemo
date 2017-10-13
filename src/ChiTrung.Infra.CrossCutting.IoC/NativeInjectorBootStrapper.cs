@@ -42,6 +42,7 @@ namespace ChiTrung.Infra.CrossCutting.IoC
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
             services.AddScoped<ICustomerAppService, CustomerAppService>();
+            services.AddScoped<IClientAppService, ClientAppService>();
             services.AddScoped<IBankAppService, BankAppService>();
             services.AddScoped<IAccountAppService, AccountAppService>();
             services.AddScoped<IAtmAppService, AtmAppService>();
@@ -90,6 +91,7 @@ namespace ChiTrung.Infra.CrossCutting.IoC
 
             // Infra - Data
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IBankRepository, BankRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAtmRepository, AtmRepository>();

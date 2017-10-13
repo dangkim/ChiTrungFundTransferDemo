@@ -29,4 +29,3 @@ D:\ChiTrungFundTransferDemo\src\MaterialControls.MaterialEntry\MaterialControls.
 D:\ChiTrungFundTransferDemo\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.MaterialEntry.xaml.g.cs
 D:\ChiTrungFundTransferDemo\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.dll
 D:\ChiTrungFundTransferDemo\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.pdb
-D:\ChiTrungFundTransferDemo\src\MaterialControls.MaterialEntry\MaterialControls.MaterialEntry\obj\Debug\MaterialControls.MaterialEntry.csprojResolveAssemblyReference.cache
