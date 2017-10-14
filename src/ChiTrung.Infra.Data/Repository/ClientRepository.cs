@@ -6,8 +6,6 @@ using ChiTrung.Domain.Models;
 using ChiTrung.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Dapper;
-using Microsoft.Extensions.Options;
-using ChiTrung.Domain.Options;
 using System.Data.SqlClient;
 using System;
 using Microsoft.Extensions.Configuration;
@@ -16,7 +14,6 @@ namespace ChiTrung.Infra.Data.Repository
 {
     public class ClientRepository : Repository<Client>, IClientRepository
     {
-        //private readonly DatabaseOptions _options;
         private string _connectionString = string.Empty;
         private readonly IConfiguration _config;
 
@@ -24,7 +21,6 @@ namespace ChiTrung.Infra.Data.Repository
             : base(context)
         {
             this._config = config;
-            //_options = databaseOptions.Value;
             _connectionString = this._config.GetConnectionString("DefaultConnection");
         }
 

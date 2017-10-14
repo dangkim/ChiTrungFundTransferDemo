@@ -15,12 +15,21 @@ namespace ChiTrung.Domain.Models
             IsDeleted = isDeleted;
         }
 
+        public Client(int clientId, string clientName, string contactMobile, string contactMail, bool isDeleted = false)
+        {
+            ClientId = clientId;
+            ClientName = clientName;
+            ContactMobile = contactMobile;
+            ContactMail = contactMail;
+            IsDeleted = isDeleted;
+        }
+
         // Empty constructor for EF
         protected Client() { }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ClientId { get; private set; }
-       
+
         public string ClientName { get; private set; }
 
         public string ContactMobile { get; private set; }

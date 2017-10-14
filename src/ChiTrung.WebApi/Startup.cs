@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using ChiTrung.Domain.Options;
 using ChiTrung.Infra.CrossCutting.Identity.Authorization;
 using ChiTrung.Infra.CrossCutting.Identity.Data;
 using ChiTrung.Infra.CrossCutting.Identity.Models;

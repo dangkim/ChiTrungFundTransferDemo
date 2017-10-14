@@ -198,3 +198,5 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.AssemblyInfo.cs
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.pdb
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml

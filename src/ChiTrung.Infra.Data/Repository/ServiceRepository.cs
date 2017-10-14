@@ -6,23 +6,22 @@ using ChiTrung.Domain.Models;
 using ChiTrung.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Dapper;
-using Microsoft.Extensions.Options;
-using ChiTrung.Domain.Options;
 using System.Data.SqlClient;
 using System;
+using Microsoft.Extensions.Configuration;
 
 namespace ChiTrung.Infra.Data.Repository
 {
     public class ServiceRepository : Repository<Service>, IServiceRepository
     {
-        private readonly DatabaseOptions _options;
         private string _connectionString = string.Empty;
+        private readonly IConfiguration _config;
 
-        public ServiceRepository(ChiTrungContext context, IOptions<DatabaseOptions> databaseOptions)
+        public ServiceRepository(ChiTrungContext context, IConfiguration config)
             : base(context)
         {
-            _options = databaseOptions.Value;
-            _connectionString = !string.IsNullOrWhiteSpace(_options.ConnectionString) ? _options.ConnectionString : throw new ArgumentNullException(nameof(_options.ConnectionString));
+            this._config = config;
+            _connectionString = this._config.GetConnectionString("DefaultConnection");
         }
 
         public async Task<Service> GetServiceById(int serviceId)
@@ -39,7 +38,8 @@ namespace ChiTrung.Infra.Data.Repository
                 var result = await connection.QueryAsync<Service>(
                   @"SELECT first_name, last_name
                     FROM  service
-                    WHERE first_name like @value Or last_name like @value"
+                    WHERE first_name like @value Or last_name like @value
+                    AND IsDeleted = 0"
                         , new { value = "%" + name + "%" }
                     );
 

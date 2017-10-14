@@ -13,7 +13,7 @@ namespace ChiTrung.Domain.Events
             BirthDate = birthDate;
             AggregateId = id;
         }
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         public string Name { get; private set; }
 

@@ -33,6 +33,9 @@ namespace ChiTrung.Infra.Data.Mappings
             builder.Property(e => e.IsDeleted)
                 .HasColumnType("bit")
                 .IsRequired();
+
+            //Unique Constraint: Make sure all values in two columns are different.
+            builder.HasIndex(c => new { c.ClientName, c.ContactMobile }).IsUnique(true);
         }
     }
 }

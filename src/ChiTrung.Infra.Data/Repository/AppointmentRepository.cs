@@ -6,21 +6,22 @@ using System.Collections.Generic;
 using System.Linq;
 using ChiTrung.Domain.Interfaces;
 using ChiTrung.Domain.Models;
-using ChiTrung.Domain.Options;
-using Microsoft.Extensions.Options;
 using Dapper;
+using ChiTrung.Infra.Data.Context;
+using Microsoft.Extensions.Configuration;
 
 namespace ChiTrung.Infra.Data.Repository
 {
-    public class AppointmentRepository : IAppointmentRepository
+    public class AppointmentRepository : Repository<Appointment>, IAppointmentRepository
     {
-        private readonly DatabaseOptions _options;
         private string _connectionString = string.Empty;
+        private readonly IConfiguration _config;
 
-        public AppointmentRepository(IOptions<DatabaseOptions> databaseOptions)
+        public AppointmentRepository(ChiTrungContext context, IConfiguration config)
+            : base(context)
         {
-            _options = databaseOptions.Value;
-            _connectionString = !string.IsNullOrWhiteSpace(_options.ConnectionString) ? _options.ConnectionString : throw new ArgumentNullException(nameof(_options.ConnectionString));
+            this._config = config;
+            _connectionString = this._config.GetConnectionString("DefaultConnection");
         }
 
         public async Task<IEnumerable<dynamic>> GetEmployeeSchedule(DateTime desiredTime)
@@ -35,7 +36,7 @@ namespace ChiTrung.Infra.Data.Repository
                     WHERE schedule.employee_id = employee.id
                     AND schedule.from >= @desired_time
                     AND schedule.to <= @desired_time 
-                    AND IsDeleted == false"
+                    AND IsDeleted = 0"
                         , new { desiredTime }
                     );
 
@@ -59,7 +60,7 @@ namespace ChiTrung.Infra.Data.Repository
                      AND appointment.start_time >= @desired_time
                      AND appointment.end_time_expected <= @desired_time
                      AND appointment.employee_id = @desired_employee
-                     AND IsDeleted == false"
+                     AND IsDeleted = 0"
                         , new { desiredTime, desiredEmpolyee }
                     );
 
@@ -78,7 +79,7 @@ namespace ChiTrung.Infra.Data.Repository
                      FROM  ( SELECT @desired_time AS ""desired_time"", COUNT(*) AS employees_working FROM schedule
                             WHERE schedule.from >= @desired_time
                             AND schedule.to <= @desired_time
-                            AND schedule.IsDeleted == false
+                            AND schedule.IsDeleted = 0
                      ) AS a
                      LEFT JOIN
                      (
@@ -87,7 +88,7 @@ namespace ChiTrung.Infra.Data.Repository
                         WHERE appointment.employee_id = employee.id
                         AND appointment.start_time >= @desired_time
                         AND appointment.end_time_expected <= @desired_time
-                        AND appointment.IsDeleted == false
+                        AND appointment.IsDeleted = 0
                      ) AS b ON a.desired_time = b.desired_time"
                         , new { desiredTime }
                      );
@@ -109,7 +110,7 @@ namespace ChiTrung.Infra.Data.Repository
                      AND Date(appointment.start_time) = Date(@desired_time)
                      AND appointment.employee_id = @selected_employee
                      AND appointment.IsDeleted == false
-                     AND client.IsDeleted == false"
+                     AND client.IsDeleted = 0"
                         , new { desiredTime, desiredEmpolyee }
                      );
 

@@ -6,23 +6,22 @@ using ChiTrung.Domain.Models;
 using ChiTrung.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Dapper;
-using Microsoft.Extensions.Options;
-using ChiTrung.Domain.Options;
 using System.Data.SqlClient;
 using System;
+using Microsoft.Extensions.Configuration;
 
 namespace ChiTrung.Infra.Data.Repository
 {
     public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
     {
-        private readonly DatabaseOptions _options;
         private string _connectionString = string.Empty;
+        private readonly IConfiguration _config;
 
-        public EmployeeRepository(ChiTrungContext context, IOptions<DatabaseOptions> databaseOptions)
+        public EmployeeRepository(ChiTrungContext context, IConfiguration config)
             : base(context)
         {
-            _options = databaseOptions.Value;
-            _connectionString = !string.IsNullOrWhiteSpace(_options.ConnectionString) ? _options.ConnectionString : throw new ArgumentNullException(nameof(_options.ConnectionString));
+            this._config = config;
+            _connectionString = this._config.GetConnectionString("DefaultConnection");
         }
 
         public async Task<Employee> GetEmployeeById(int employeeId)
@@ -40,7 +39,7 @@ namespace ChiTrung.Infra.Data.Repository
                   @"SELECT first_name, last_name
                     FROM  employee
                     WHERE first_name like @value Or last_name like @value
-                    AND IsDeleted == false"
+                    AND IsDeleted = 0"
                         , new { value = "%" + name + "%" }
                     );
 
