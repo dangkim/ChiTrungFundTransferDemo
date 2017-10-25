@@ -12,10 +12,18 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <material:MaterialEntry Grid.Row="0" Placeholder="User Name" IsValid="{Binding IsUserNameInValid}" ValidationText="{Binding ValidationUserNameText}" ValidationColor="Red"  AccentColor="Green" Text="{Binding UserName}"/>
                 <material:MaterialEntry Grid.Row="1" Placeholder="Password" IsValid="{Binding IsPasswordInValid}" ValidationText="{Binding ValidationPasswordText}" IsPassword="True" AccentColor="Orange" Text="{Binding Password}"/>
-                <Button Grid.Row="2" cm:Message.Attach="RegisterAsync" Text="Done"/>         
+                <Button Grid.Row="2" cm:Message.Attach="RegisterAsync" Text="Done"/>
+                <Button Grid.Row="3" cm:Message.Attach="CustomerAsync" Text="Customer"/>
+                <material:MaterialEntry Grid.Row="4" Placeholder="MessageFromServer" AccentColor="Green" Text="{Binding MessageFromServer}"/>
+                <material:MaterialEntry Grid.Row="5" Placeholder="MessageFromXM" AccentColor="Green" Text="{Binding MessageFromXM}"/>
+                <Button Grid.Row="6" cm:Message.Attach="SendAsync" Text="Send"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

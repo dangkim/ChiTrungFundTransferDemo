@@ -15,6 +15,11 @@ namespace ChiTrung.AppointmentManager.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+            // Call in your platform (non-pcl) startup            
+            // 1) Link in your main activity or AppDelegate or whatever
+            Websockets.Droid.WebsocketConnection.Link();
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
             BorderlessEntryRenderer.Init();
             // Resolve the App class to use the singleton we created

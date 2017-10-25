@@ -4,6 +4,8 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Androi
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Caliburn.Micro.Platform.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Caliburn.Micro.Platform.Xamarin.Forms.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\FormsViewGroup.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Websockets.Droid.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\WebSockets.PCL.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll

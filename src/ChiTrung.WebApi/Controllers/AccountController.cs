@@ -32,7 +32,7 @@ namespace ChiTrung.WebApi.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("account")]
-        public async Task<IActionResult> Login([FromBody] LoginViewModel model)
+        public async Task<IActionResult> Login([FromBody] MobileRegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -40,11 +40,12 @@ namespace ChiTrung.WebApi.Controllers
                 return Response(model);
             }
 
-            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, true);
+            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, true);
             if (!result.Succeeded)
                 NotifyError(result.ToString(), "Login failure");
 
             _logger.LogInformation(1, "User logged in.");
+
             return Response(model);
         }
 

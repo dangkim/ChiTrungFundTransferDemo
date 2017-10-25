@@ -6,6 +6,8 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ChiTrung.AppointmentManager.RequestProviders
 {
@@ -40,7 +42,10 @@ namespace ChiTrung.AppointmentManager.RequestProviders
 
         public async Task<TResult> PostAsync<TResult>(string uri, TResult data, string token = "", string header = "")
         {
-            HttpClient httpClient = CreateHttpClient(token);
+            CookieContainer cookies = new CookieContainer();
+            HttpClientHandler handler = new HttpClientHandler();
+
+            HttpClient httpClient = CreateHttpClient(handler);
 
             if (!string.IsNullOrEmpty(header))
             {
@@ -53,6 +58,10 @@ namespace ChiTrung.AppointmentManager.RequestProviders
 
             await HandleResponse(response);
             string serialized = await response.Content.ReadAsStringAsync();
+
+            var uriValue = new Uri(uri);
+
+            IEnumerable<Cookie> responseCookies = cookies.GetCookies(uriValue).Cast<Cookie>();
 
             TResult result = await Task.Run(() =>
                 JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings));
@@ -113,12 +122,25 @@ namespace ChiTrung.AppointmentManager.RequestProviders
         private HttpClient CreateHttpClient(string token = "")
         {
             var httpClient = new HttpClient();
+
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             if (!string.IsNullOrEmpty(token))
             {
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
+            return httpClient;
+        }
+
+        private HttpClient CreateHttpClient(HttpClientHandler handler)
+        {
+            CookieContainer cookies = new CookieContainer();
+            handler.CookieContainer = cookies;
+
+            HttpClient httpClient = new HttpClient(handler);
+
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
             return httpClient;
         }
 

@@ -14,6 +14,10 @@ Caliburn.Micro.CaliburnApplication, Caliburn.Micro.Platform;md5829c04c8adcda52a3
 Caliburn.Micro.CaliburnApplication, Caliburn.Micro.Platform, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null;md5829c04c8adcda52a360bc26da6c6d4c8.CaliburnApplication
 Caliburn.Micro.CaliburnApplication;md5829c04c8adcda52a360bc26da6c6d4c8.CaliburnApplication
 caliburn.micro.CaliburnApplication;md5829c04c8adcda52a360bc26da6c6d4c8.CaliburnApplication
+Websockets.Droid.WebsocketConnection, Websockets.Droid;md58b3d939d061c162c7a16be0d4ecab390.WebsocketConnection
+Websockets.Droid.WebsocketConnection, Websockets.Droid, Version=1.0.1.8, Culture=neutral, PublicKeyToken=null;md58b3d939d061c162c7a16be0d4ecab390.WebsocketConnection
+Websockets.Droid.WebsocketConnection;md58b3d939d061c162c7a16be0d4ecab390.WebsocketConnection
+websockets.droid.WebsocketConnection;md58b3d939d061c162c7a16be0d4ecab390.WebsocketConnection
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

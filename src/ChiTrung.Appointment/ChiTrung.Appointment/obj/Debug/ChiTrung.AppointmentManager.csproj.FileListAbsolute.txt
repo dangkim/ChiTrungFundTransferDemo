@@ -31,3 +31,4 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment\obj\De
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment\obj\Debug\ChiTrung.AppointmentManager.Views.RegisterView.xaml.g.cs
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment\obj\Debug\ChiTrung.AppointmentManager.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment\obj\Debug\ChiTrung.AppointmentManager.pdb
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Appointment\ChiTrung.Appointment\bin\Debug\WebSockets.PCL.dll

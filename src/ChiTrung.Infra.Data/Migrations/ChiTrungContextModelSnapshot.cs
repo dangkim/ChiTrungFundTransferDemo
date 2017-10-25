@@ -166,6 +166,9 @@ namespace ChiTrung.Infra.Data.Migrations
 
                     b.HasKey("ClientId");
 
+                    b.HasIndex("ClientName", "ContactMobile")
+                        .IsUnique();
+
                     b.ToTable("Client");
                 });
 
@@ -253,6 +256,27 @@ namespace ChiTrung.Infra.Data.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("ChiTrung.Domain.Models.RToken", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ClientId")
+                        .IsRequired()
+                        .HasColumnType("varchar(256)");
+
+                    b.Property<bool>("IsStop")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RefreshToken")
+                        .IsRequired()
+                        .HasColumnType("varchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RToken");
                 });
 
             modelBuilder.Entity("ChiTrung.Domain.Models.Schedule", b =>

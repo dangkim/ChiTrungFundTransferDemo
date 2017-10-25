@@ -12,5 +12,7 @@ namespace ChiTrung.AppointmentManager.Services
     public interface IAccountService
     {
         Task<RegisterModel> RegisterAsync(string userName, string password);
+        Task<RegisterModel> LoginAsync(string userName, string password);
+        Task<IEnumerable<CustomerModel>> GetCustomerAsync();
     }
 }

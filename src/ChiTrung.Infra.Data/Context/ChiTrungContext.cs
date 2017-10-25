@@ -22,6 +22,7 @@ namespace ChiTrung.Infra.Data.Context
         public DbSet<Service> Service { get; set; }
         public DbSet<ServiceProvided> ServiceProvided { get; set; }
         public DbSet<ServiceBooked> ServiceBooked { get; set; }
+        public DbSet<RToken> RToken { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,6 +39,7 @@ namespace ChiTrung.Infra.Data.Context
             modelBuilder.AddConfiguration(new ServiceMap());
             modelBuilder.AddConfiguration(new ServiceProvidedMap());
             modelBuilder.AddConfiguration(new ServiceBookedMap());
+            modelBuilder.AddConfiguration(new RTokenMap());
 
             base.OnModelCreating(modelBuilder);
         }

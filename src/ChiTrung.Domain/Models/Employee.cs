@@ -14,6 +14,14 @@ namespace ChiTrung.Domain.Models
             IsDeleted = isDeleted;
         }
 
+        public Employee(int employeeId, string firstName, string lastName, bool isDeleted = false)
+        {
+            EmployeeId = employeeId;
+            FirstName = firstName;
+            LastName = lastName;
+            IsDeleted = isDeleted;
+        }
+
         // Empty constructor for EF
         protected Employee() { }
 

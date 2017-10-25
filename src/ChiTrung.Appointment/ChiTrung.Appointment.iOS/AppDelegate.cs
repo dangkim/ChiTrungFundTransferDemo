@@ -22,6 +22,11 @@ namespace ChiTrung.AppointmentManager.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {            
             global::Xamarin.Forms.Forms.Init();
+
+            // Call in your platform (non-pcl) startup            
+            // 1) Link in your main activity or AppDelegate or whatever
+            Websockets.Ios.WebsocketConnection.Link();
+
             BorderlessEntryRenderer.Init();
             LoadApplication(IoC.Get<App>());
 

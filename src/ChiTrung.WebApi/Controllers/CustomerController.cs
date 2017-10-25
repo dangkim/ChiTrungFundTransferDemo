@@ -20,7 +20,7 @@ namespace ChiTrung.WebApi.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "read:messages")]
         [Route("customer-management")]
         public IActionResult Get()
         {

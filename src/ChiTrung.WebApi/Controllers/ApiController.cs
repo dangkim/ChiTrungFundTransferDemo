@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace ChiTrung.WebApi.Controllers
 {
-    public abstract class ApiController : ControllerBase
+    public abstract class ApiController : Controller
     {
         private readonly DomainNotificationHandler _notifications;
 

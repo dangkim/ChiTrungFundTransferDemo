@@ -21,7 +21,7 @@ namespace ChiTrung.WebApi.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        [Authorize(Policy = "CanWriteClientData")]
+        [Authorize("read:messages")]
         [Route("Client-management/{name}")]
         public IActionResult Get(string name)
         {
@@ -39,7 +39,7 @@ namespace ChiTrung.WebApi.Controllers
         }     
 
         [HttpPost]
-        [Authorize(Policy = "CanWriteClientData")]
+        [Authorize("create:messages")]
         [Route("Client-management")]
         public IActionResult Post([FromBody]ClientViewModel clientViewModel)
         {

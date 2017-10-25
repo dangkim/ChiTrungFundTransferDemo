@@ -190,13 +190,13 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\zh-Hant\
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb
+D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.csprojResolveAssemblyReference.cache
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.csproj.CoreCompileInputs.cache
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.AssemblyInfoInputs.cache
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.AssemblyInfo.cs
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\obj\Debug\netcoreapp2.0\ChiTrung.Domain.pdb
-D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
-D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml

@@ -60,7 +60,7 @@ namespace ChiTrung.UI.Site
                 {
                     googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
                     googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
-                }); ;
+                });
 
             services.AddMvc();
             services.AddAutoMapper();

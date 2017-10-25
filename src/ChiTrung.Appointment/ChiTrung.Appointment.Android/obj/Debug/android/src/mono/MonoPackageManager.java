@@ -104,6 +104,8 @@ class MonoPackageManager_Resources {
 		"Caliburn.Micro.Platform.dll",
 		"Caliburn.Micro.Platform.Xamarin.Forms.dll",
 		"FormsViewGroup.dll",
+		"Websockets.Droid.dll",
+		"WebSockets.PCL.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

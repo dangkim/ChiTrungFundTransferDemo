@@ -10,7 +10,7 @@ namespace ChiTrung.AppointmentManager
     {
         public const string AzureTag = "Azure";
         public const string MockTag = "Mock";
-        public const string DefaultEndpoint = "http://192.168.1.9";
+        public const string DefaultEndpoint = "http://192.168.1.12";
 
         private string _baseEndpoint;
         private static readonly GlobalSetting _instance = new GlobalSetting();
