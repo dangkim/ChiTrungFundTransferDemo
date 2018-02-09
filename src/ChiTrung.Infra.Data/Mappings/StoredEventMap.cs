@@ -6,9 +6,9 @@ using ChiTrung.Domain.Core.Events;
 
 namespace ChiTrung.Infra.Data.Mappings
 {    
-    public class StoredEventMap : EntityTypeConfiguration<StoredEvent>
+    public class StoredEventMap : IEntityTypeConfiguration<StoredEvent>
     {
-        public override void Map(EntityTypeBuilder<StoredEvent> builder)
+        public void Configure(EntityTypeBuilder<StoredEvent> builder)
         {
             builder.Property(c => c.Timestamp)
                 .HasColumnName("CreationDate");

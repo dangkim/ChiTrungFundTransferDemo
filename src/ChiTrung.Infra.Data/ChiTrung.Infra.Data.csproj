@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\AppointmentSQL\**" />
+    <EmbeddedResource Remove="Migrations\AppointmentSQL\**" />
+    <None Remove="Migrations\AppointmentSQL\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ChiTrung.Domain\ChiTrung.Domain.csproj" />
   </ItemGroup>
 
@@ -33,10 +39,6 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\AppointmentSQL\" />
   </ItemGroup>
 
 </Project>

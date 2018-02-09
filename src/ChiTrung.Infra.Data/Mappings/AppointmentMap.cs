@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class AppointmentMap : EntityTypeConfiguration<Appointment>
+    public class AppointmentMap : IEntityTypeConfiguration<Appointment>
     {
-        public override void Map(EntityTypeBuilder<Appointment> builder)
+        public void Configure(EntityTypeBuilder<Appointment> builder)
         {
             builder.HasKey(d => d.AppointmentId);
 

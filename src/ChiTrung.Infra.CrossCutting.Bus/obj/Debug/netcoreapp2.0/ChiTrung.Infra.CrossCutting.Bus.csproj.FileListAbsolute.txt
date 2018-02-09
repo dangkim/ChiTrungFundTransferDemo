@@ -20,3 +20,14 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcor
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.AssemblyInfo.cs
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.deps.json
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.csprojResolveAssemblyReference.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.dll
+C:\BSTools\SlotBackOffice\src\ChiTrung.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ChiTrung.Infra.CrossCutting.Bus.pdb

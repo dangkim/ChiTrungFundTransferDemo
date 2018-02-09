@@ -609,7 +609,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "gBZvLTTndM+bMudBrQRq5q8V4MUDCvqW0KlGErqWd3+jgQ8bizNsAGFtN2Hc8YEicVyPkzHhEnOiAjbc2U72vw==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -750,7 +750,7 @@
       ]
     },
     "System.ComponentModel/4.3.0": {
-      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "sha512": "Bim+KH3W31IFREgy+Y0Rwy5hLLby9J1iZUZ+recgWogM5ChVoepq8A+zs+v3SKvB2PAnXxLwtnH9cTKpy72HFg==",
       "type": "package",
       "path": "system.componentmodel/4.3.0",
       "files": [
@@ -807,7 +807,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "v7dDwEnBPUtNK6ZbhVde11Rq7DTr4ww5z90+nQdFHV/blUcgBar2sd/duHbjFA83ssGubqB70EZOvlUPXnGxmg==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -906,7 +906,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Trung\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -915,25 +916,28 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
+      "projectUniqueName": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
       "projectName": "ChiTrung.Domain.Core",
-      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
-      "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Domain.Core\\obj\\",
+      "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Domain.Core\\ChiTrung.Domain.Core.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -949,23 +953,23 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "mediatr": {
-            "target": "Package",
-            "version": "3.0.1"
-          },
           "FluentValidation": {
             "target": "Package",
-            "version": "7.1.1"
+            "version": "[7.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
           "System.ComponentModel": {
             "target": "Package",
-            "version": "4.3.0"
+            "version": "[4.3.0, )"
+          },
+          "mediatr": {
+            "target": "Package",
+            "version": "[3.0.1, )"
           }
         },
         "imports": [

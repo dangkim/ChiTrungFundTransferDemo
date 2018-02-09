@@ -22820,45 +22820,51 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\Trung\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
+      "projectUniqueName": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
       "projectName": "ChiTrung.Appointment.UWP",
-      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
-      "projectJsonPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\project.json",
-      "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\obj\\",
+      "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\ChiTrung.Appointment.UWP.csproj",
+      "projectJsonPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\project.json",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj": {
-              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj"
+            "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj": {
+              "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj"
             },
-            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
-              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
+            "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
+              "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
             },
-            "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj": {
-              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj"
+            "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj": {
+              "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\ChiTrung.Appointment\\ChiTrung.Appointment\\ChiTrung.AppointmentManager.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
-      "Caliburn.Micro.Xamarin.Forms": "3.2.0",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-      "Xamarin.Forms": "2.3.4.270"
+      "Caliburn.Micro.Xamarin.Forms": "[3.2.0, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.2.2, )",
+      "Xamarin.Forms": "[2.3.4.270, )"
     },
     "frameworks": {
       "uap10.0.10586": {}
@@ -22889,7 +22895,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Microsoft.NETCore.UniversalWindowsPlatform from 6.0.0-preview1-25611-03 to 5.2.2. Reference the package directly from the project to select a different version. \r\n ChiTrung.Appointment.UWP (>= 1.0.0) -> MaterialControls.MaterialEntry.UWP (>= 1.0.0) -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.0.0-preview1-25611-03) \r\n ChiTrung.Appointment.UWP (>= 1.0.0) -> Microsoft.NETCore.UniversalWindowsPlatform (>= 5.2.2)",
+      "message": "Detected package downgrade: Microsoft.NETCore.UniversalWindowsPlatform from 6.0.0-preview1-25611-03 to 5.2.2. Reference the package directly from the project to select a different version. \r\n ChiTrung.Appointment.UWP -> MaterialControls.MaterialEntry.UWP -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.0.0-preview1-25611-03) \r\n ChiTrung.Appointment.UWP -> Microsoft.NETCore.UniversalWindowsPlatform (>= 5.2.2)",
       "libraryId": "Microsoft.NETCore.UniversalWindowsPlatform",
       "targetGraphs": [
         "UAP,Version=v10.0.10586",

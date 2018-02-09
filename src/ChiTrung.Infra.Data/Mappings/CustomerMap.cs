@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class CustomerMap : EntityTypeConfiguration<Customer>
+    public class CustomerMap : IEntityTypeConfiguration<Customer>
     {
-        public override void Map(EntityTypeBuilder<Customer> builder)
+        public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.Property(c => c.Id)
                 .HasColumnName("Id");

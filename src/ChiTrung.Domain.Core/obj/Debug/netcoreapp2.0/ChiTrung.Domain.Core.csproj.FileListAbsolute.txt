@@ -16,3 +16,12 @@ D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\Chi
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb
 D:\ChiTrungFundTransferDemo\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.csprojResolveAssemblyReference.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.deps.json
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\bin\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.csprojResolveAssemblyReference.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.csproj.CoreCompileInputs.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.AssemblyInfoInputs.cache
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.AssemblyInfo.cs
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.dll
+C:\BSTools\SlotBackOffice\src\ChiTrung.Domain.Core\obj\Debug\netcoreapp2.0\ChiTrung.Domain.Core.pdb

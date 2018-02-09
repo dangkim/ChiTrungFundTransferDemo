@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class ServiceMap : EntityTypeConfiguration<Service>
+    public class ServiceMap : IEntityTypeConfiguration<Service>
     {
-        public override void Map(EntityTypeBuilder<Service> builder)
+        public void Configure(EntityTypeBuilder<Service> builder)
         {
             builder.HasKey(e => e.ServiceId);
 

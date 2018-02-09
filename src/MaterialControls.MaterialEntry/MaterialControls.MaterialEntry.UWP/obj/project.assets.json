@@ -29,7 +29,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -239,14 +239,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2262,7 +2262,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -2419,14 +2419,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2459,7 +2459,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -2802,7 +2802,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -4585,7 +4585,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -4743,14 +4743,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -4783,7 +4783,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -5171,7 +5171,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -6944,7 +6944,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -7104,14 +7104,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -7144,7 +7144,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -7487,7 +7487,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -9276,7 +9276,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -9437,14 +9437,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -9477,7 +9477,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -9865,7 +9865,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -11644,7 +11644,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -11804,14 +11804,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -11844,7 +11844,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -12187,7 +12187,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -13976,7 +13976,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -14137,14 +14137,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -14177,7 +14177,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.0-preview1-25611-03"
+          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -14565,7 +14565,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
+      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -16375,14 +16375,14 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Net.Native.Compiler/1.7.0": {
-      "sha512": "g46kdqDNrrVx3CiUoSe2QDkUPi/hsncwGK2k0jti5e6PZkiUWlplhkjGHS/Xrp4dx6+KhC3tuUtStHaNX7emMQ==",
+    "Microsoft.Net.Native.Compiler/1.7.1": {
+      "sha512": "P55mWSgc8zLrk2eoRxd3T3QPVXXKrqD/DypC+It8wSgZfaUl2/o31bCOR+aWq1NtxDwDnCPGNVsmo/bmgIeJtA==",
       "type": "package",
-      "path": "microsoft.net.native.compiler/1.7.0",
+      "path": "microsoft.net.native.compiler/1.7.1",
       "files": [
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
-        "microsoft.net.native.compiler.1.7.0.nupkg.sha512",
+        "microsoft.net.native.compiler.1.7.1.nupkg.sha512",
         "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
@@ -18610,14 +18610,14 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "drU6QIRqilpIbIleY4ay4ta4O6x9fEY6tU9OTf5jJHByKtIKmezfOdG/Dd8X0eI69NXwvg5kaheDPbPNGd2qdQ==",
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
       "type": "package",
-      "path": "microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "microsoft.netcore.universalwindowsplatform.nuspec",
         "ref/netcore50/_._",
         "ref/uap10.0.15138/Microsoft.CSharp.dll",
@@ -18709,6 +18709,8 @@
         "ref/uap10.0.15138/System.IO.MemoryMappedFiles.xml",
         "ref/uap10.0.15138/System.IO.Pipes.dll",
         "ref/uap10.0.15138/System.IO.Pipes.xml",
+        "ref/uap10.0.15138/System.IO.Ports.dll",
+        "ref/uap10.0.15138/System.IO.Ports.xml",
         "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.xml",
         "ref/uap10.0.15138/System.IO.dll",
@@ -19753,15 +19755,15 @@
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
-    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "rUKZmKH/YFcboag1mdB+3uia3/orYUN5Mmb5Upkr5iDGLNAqW5y88XigItOfOAQRhqOkczJdBWSMHjJT2R3U2g==",
+    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "ZGShwJB9yNwHyM+w7g8int9gmurykzvy+SWv74+lCul0ddTmtI9WhXrAg3Dyub9urV7/lUtUjCjH+cSC5/5t7A==",
       "type": "package",
-      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -19812,6 +19814,7 @@
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -19941,15 +19944,15 @@
         "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "vhZOWoBrUz+U5xF/tD+uCDdGWn4rI9bxIRpeUyEb3mtCYVclc6twyp8vb8H0qjtPRS3tx4yqp8iLsp3nZ3EovA==",
+    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "GaE6GmyEmK2NX2PMfBJGGzLQSUWYO18LDbbCVaNJecnaa0XdBLFOouBoI8X19CcJVww62ugzwM75JjfHw60Wnw==",
       "type": "package",
-      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -20000,6 +20003,7 @@
         "runtimes/win10-arm/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -20116,15 +20120,15 @@
         "runtimes/win10-arm/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "CNQoXevHKMv0ylfMLEkw0pURvP3wq3y4u5if2suApNtmPKx/6RMIaUvkhbasSmM2PJTv0dfZ3Bs53EML5ImtIw==",
+    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "ouTXA9SGNNtKOorZBMYOCNVN8TxC4RlvaxzAU+ZRAxI00GMfoEBKjfd5FHJMtyi6+lng4yjpdUuz9h1ePgYV9Q==",
       "type": "package",
-      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -20175,6 +20179,7 @@
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -20304,15 +20309,15 @@
         "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "KvXs/zNPp14ZvYLKLFqcBfYyRVfxxFuuFeeFHxlfW/5THz5+dpsjsLHeg3mAkG+3yWF7LBtevIjfXiquj3eyuQ==",
+    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "iq7w9LmLzJla647TOEXrghCK14zw4ImIlnyZAO+h/XoRoq3l1OSng+hRBHzusgKwhvubdKHNlZWA9j4aj2fIng==",
       "type": "package",
-      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -20363,6 +20368,7 @@
         "runtimes/win10-x64/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -20479,15 +20485,15 @@
         "runtimes/win10-x64/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "d2NfpjJyvaRR5uTIU37d1fR47pooaXZ0W7/EbDu/F8W2zcy6e8fDSfusPYm6tsW2HTbkPJUmUGcYkdPPfg5Oxg==",
+    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "p4GOowv8/INpx65r/TU0OUNoBC3Qk3kbRKPAkqQ05Tf/rTg8NOLR+qxvNRlH49rsUvGb14RarUqscgwcekBOXA==",
       "type": "package",
-      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -20538,6 +20544,7 @@
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -20667,15 +20674,15 @@
         "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.0-preview1-25611-03": {
-      "sha512": "1qK7ob7IDBav8x0q+9BiGUrcdV0veyvgEQgojQflKflYH369pMV/EmwLdd0d49mpasEvnynS+t6Tl0CoWv7CZQ==",
+    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "nT3j6rR+hZwec3IGcFE8Vsq0bURezJzpCVg9UwQ9dzDXOrZrOfJm0RzWSuC5imRphSCFzz57I73TplpXyC1PUA==",
       "type": "package",
-      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.0-preview1-25611-03",
+      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.0.0-preview1-25611-03.nupkg.sha512",
+        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
         "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
@@ -20726,6 +20733,7 @@
         "runtimes/win10-x86/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Ports.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/System.IO.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/System.Linq.Expressions.dll",
@@ -26075,47 +26083,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Trung\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
+      "projectUniqueName": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
       "projectName": "MaterialControls.MaterialEntry.UWP",
-      "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
-      "packagesPath": "C:\\Users\\Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\obj\\",
+      "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\MaterialControls.MaterialEntry.UWP.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.10586"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
-              "projectPath": "D:\\ChiTrungFundTransferDemo\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
+            "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj": {
+              "projectPath": "C:\\BSTools\\SlotBackOffice\\src\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry\\MaterialControls.MaterialEntry.csproj"
             }
           }
         }
-      }
-    },
-    "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "6.0.0-preview1-25611-03"
-      },
-      "Xamarin.Forms": {
-        "target": "Package",
-        "version": "2.3.4.270"
       }
     },
     "frameworks": {
@@ -26123,11 +26127,11 @@
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
-            "version": "6.0.0-preview1-25611-03"
+            "version": "[6.0.0-preview1-25611-03, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "2.3.4.270"
+            "version": "[2.3.4.270, )"
           }
         }
       }
@@ -26152,5 +26156,23 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MaterialControls.MaterialEntry.UWP depends on Microsoft.NETCore.UniversalWindowsPlatform (>= 6.0.0-preview1-25611-03) but Microsoft.NETCore.UniversalWindowsPlatform 6.0.0-preview1-25611-03 was not found. An approximate best match of Microsoft.NETCore.UniversalWindowsPlatform 6.0.1 was resolved.",
+      "libraryId": "Microsoft.NETCore.UniversalWindowsPlatform",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586",
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    }
+  ]
 }

@@ -14,7 +14,7 @@ namespace ChiTrung.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.AddConfiguration(new StoredEventMap());
+            modelBuilder.ApplyConfiguration(new StoredEventMap());
 
             base.OnModelCreating(modelBuilder);
         }

@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class WithdrawalMap : EntityTypeConfiguration<Withdrawal>
+    public class WithdrawalMap : IEntityTypeConfiguration<Withdrawal>
     {
-        public override void Map(EntityTypeBuilder<Withdrawal> builder)
+        public void Configure(EntityTypeBuilder<Withdrawal> builder)
         {
             builder.HasKey(w => w.WitCode);
 

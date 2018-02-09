@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class DepositMap : EntityTypeConfiguration<Deposit>
+    public class DepositMap : IEntityTypeConfiguration<Deposit>
     {
-        public override void Map(EntityTypeBuilder<Deposit> builder)
+        public void Configure(EntityTypeBuilder<Deposit> builder)
         {
             builder.HasKey(d => d.DepCode);
 

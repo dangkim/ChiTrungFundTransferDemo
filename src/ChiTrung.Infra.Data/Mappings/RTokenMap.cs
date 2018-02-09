@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class RTokenMap : EntityTypeConfiguration<RToken>
+    public class RTokenMap : IEntityTypeConfiguration<RToken>
     {
-        public override void Map(EntityTypeBuilder<RToken> builder)
+        public void Configure(EntityTypeBuilder<RToken> builder)
         {
             builder.HasKey(a => a.Id);
 

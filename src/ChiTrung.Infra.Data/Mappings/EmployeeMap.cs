@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class EmployeeMap : EntityTypeConfiguration<Employee>
+    public class EmployeeMap : IEntityTypeConfiguration<Employee>
     {
-        public override void Map(EntityTypeBuilder<Employee> builder)
+        public void Configure(EntityTypeBuilder<Employee> builder)
         {
             builder.HasKey(e => e.EmployeeId);
 

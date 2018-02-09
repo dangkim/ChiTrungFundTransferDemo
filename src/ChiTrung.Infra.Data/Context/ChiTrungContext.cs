@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using ChiTrung.Domain.Models;
 using ChiTrung.Infra.Data.Mappings;
-using ChiTrung.Infra.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -26,20 +25,20 @@ namespace ChiTrung.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.AddConfiguration(new CustomerMap());
-            modelBuilder.AddConfiguration(new BankMap());
-            modelBuilder.AddConfiguration(new AccountMap());
-            modelBuilder.AddConfiguration(new AtmMap());
-            modelBuilder.AddConfiguration(new DepositMap());
-            modelBuilder.AddConfiguration(new WithdrawalMap());
-            modelBuilder.AddConfiguration(new ScheduleMap());
-            modelBuilder.AddConfiguration(new EmployeeMap());
-            modelBuilder.AddConfiguration(new ClientMap());
-            modelBuilder.AddConfiguration(new AppointmentMap());
-            modelBuilder.AddConfiguration(new ServiceMap());
-            modelBuilder.AddConfiguration(new ServiceProvidedMap());
-            modelBuilder.AddConfiguration(new ServiceBookedMap());
-            modelBuilder.AddConfiguration(new RTokenMap());
+            modelBuilder.ApplyConfiguration(new CustomerMap());
+            modelBuilder.ApplyConfiguration(new BankMap());
+            modelBuilder.ApplyConfiguration(new AccountMap());
+            modelBuilder.ApplyConfiguration(new AtmMap());
+            modelBuilder.ApplyConfiguration(new DepositMap());
+            modelBuilder.ApplyConfiguration(new WithdrawalMap());
+            modelBuilder.ApplyConfiguration(new ScheduleMap());
+            modelBuilder.ApplyConfiguration(new EmployeeMap());
+            modelBuilder.ApplyConfiguration(new ClientMap());
+            modelBuilder.ApplyConfiguration(new AppointmentMap());
+            modelBuilder.ApplyConfiguration(new ServiceMap());
+            modelBuilder.ApplyConfiguration(new ServiceProvidedMap());
+            modelBuilder.ApplyConfiguration(new ServiceBookedMap());
+            modelBuilder.ApplyConfiguration(new RTokenMap());
 
             base.OnModelCreating(modelBuilder);
         }

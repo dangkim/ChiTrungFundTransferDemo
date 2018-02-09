@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class BankMap : EntityTypeConfiguration<Bank>
+    public class BankMap : IEntityTypeConfiguration<Bank>
     {
-        public override void Map(EntityTypeBuilder<Bank> builder)
+        public void Configure(EntityTypeBuilder<Bank> builder)
         {
             builder.HasKey(b => b.BankCode);
 

@@ -180,8 +180,8 @@ namespace ChiTrung.WebApi
                 s.SwaggerEndpoint("/swagger/v1/swagger.json", "ChiTrung Project API v1.1");
             });
 
-            app.UseWebSockets();
-            app.UseWebSocketHandler();            
+            //app.UseWebSockets();
+            //app.UseWebSocketHandler();            
         }
 
         private static void RegisterServices(IServiceCollection services)

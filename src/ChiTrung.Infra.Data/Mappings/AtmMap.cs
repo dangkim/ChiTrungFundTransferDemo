@@ -6,9 +6,9 @@ using ChiTrung.Infra.Data.Extensions;
 
 namespace ChiTrung.Infra.Data.Mappings
 {
-    public class AtmMap : EntityTypeConfiguration<Atm>
+    public class AtmMap : IEntityTypeConfiguration<Atm>
     {
-        public override void Map(EntityTypeBuilder<Atm> builder)
+        public void Configure(EntityTypeBuilder<Atm> builder)
         {
             builder.HasKey(a => a.AtmCode);
 
