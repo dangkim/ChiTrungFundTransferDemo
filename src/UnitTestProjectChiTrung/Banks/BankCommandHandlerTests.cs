@@ -20,7 +20,8 @@ namespace ChiTrung.Infra.Test.Banks
         public Mock<IMediatorHandler> MediatorMock { get; set; }
         public Mock<IUnitOfWork> MockUnitWork { get; set; }
         public Mock<DomainNotificationHandler> DomainNotificationMock { get; set; }
-        public ChiTrungContext _context;
+        //public ChiTrungContext _context;
+        public TigersContext _context;
         public BankRepository _bankRepository;
 
         public BankCommandHandlerTests()
@@ -115,7 +116,8 @@ namespace ChiTrung.Infra.Test.Banks
         public void BankCommandHandler_AddNewBank_ExistingBankCode()
         {
             // Arrange
-            _context = new ChiTrungContext();
+            //_context = new ChiTrungContext();
+            _context = new TigersContext();
             _bankRepository = new BankRepository(_context);
 
             // Act

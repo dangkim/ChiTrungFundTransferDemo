@@ -17,7 +17,7 @@ namespace ChiTrung.Infra.Data.Repository
         private string _connectionString = string.Empty;
         private readonly IConfiguration _config;
 
-        public ServiceProvidedRepository(ChiTrungContext context, IConfiguration config)
+        public ServiceProvidedRepository(TigersContext context, IConfiguration config)
             : base(context)
         {
             this._config = config;

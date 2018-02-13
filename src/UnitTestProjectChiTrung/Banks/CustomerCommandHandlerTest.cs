@@ -23,7 +23,8 @@ namespace ChiTrung.Infra.Test.Customers
         public Mock<IMediatorHandler> MediatorMock { get; set; }
         public Mock<IUnitOfWork> MockUnitWork { get; set; }
         public Mock<DomainNotificationHandler> DomainNotificationMock { get; set; }
-        public ChiTrungContext _context;
+        //public ChiTrungContext _context;
+        public TigersContext _context;
         public CustomerRepository _customerRepository;
 
         public CustomerCommandHandlerTest()
@@ -167,7 +168,8 @@ namespace ChiTrung.Infra.Test.Customers
         public void CustomerCommandHandler_AddNewCustomer_UniqueConstraints()
         {
             // Arrange
-            _context = new ChiTrungContext();
+            //_context = new ChiTrungContext();
+            _context = new TigersContext();
             _customerRepository = new CustomerRepository(_context);
             var registerNewCustomerCommand = new RegisterNewCustomerCommand("Kevin", "kevin1@gmail.com", DateTime.Now);
             var customer = new Customer(registerNewCustomerCommand.Id, registerNewCustomerCommand.Name, registerNewCustomerCommand.Email, registerNewCustomerCommand.BirthDate);

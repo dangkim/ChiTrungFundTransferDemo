@@ -8,7 +8,7 @@ namespace ChiTrung.Domain.Models
     {
         public Customer(Guid id, string name, string email, DateTime birthDate)
         {
-            Id = id;
+            //Id = id;
             Name = name;
             Email = email;
             BirthDate = birthDate;

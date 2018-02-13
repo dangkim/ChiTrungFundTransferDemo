@@ -5,13 +5,13 @@ namespace ChiTrung.Domain.Events
 {
     public class CustomerUpdatedEvent : Event
     {
-        public CustomerUpdatedEvent(Guid id, string name, string email, DateTime birthDate)
+        public CustomerUpdatedEvent(long id, string name, string email, DateTime birthDate)
         {
-            Id = id;
+            //Id = id;
             Name = name;
             Email = email;
             BirthDate = birthDate;
-            AggregateId = id;
+            //AggregateId = id;
         }
         public Guid Id { get; set; }
 

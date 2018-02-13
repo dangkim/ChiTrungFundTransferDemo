@@ -7,7 +7,7 @@ namespace ChiTrung.Domain.Models
     {
         public RToken(Guid id, string clientId, string refreshToken, bool isStop)
         {
-            Id = id;
+            //Id = id;
             ClientId = clientId;
             RefreshToken = refreshToken;
             IsStop = isStop;

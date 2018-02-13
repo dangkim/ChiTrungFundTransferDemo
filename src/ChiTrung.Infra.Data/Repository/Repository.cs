@@ -8,10 +8,11 @@ namespace ChiTrung.Infra.Data.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly ChiTrungContext Db;
+        //protected readonly ChiTrungContext Db;
+        protected readonly TigersContext Db;
         protected readonly DbSet<TEntity> DbSet;
 
-        public Repository(ChiTrungContext context)
+        public Repository(TigersContext context)
         {
             Db = context;
             DbSet = Db.Set<TEntity>();
@@ -23,6 +24,11 @@ namespace ChiTrung.Infra.Data.Repository
         }
 
         public virtual TEntity GetById(Guid id)
+        {
+            return DbSet.Find(id);
+        }
+
+        public virtual TEntity GetById(long id)
         {
             return DbSet.Find(id);
         }

@@ -36,7 +36,7 @@ namespace ChiTrung.Infra.CrossCutting.IoC
             services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             // ASP.NET Authorization Polices
-            services.AddSingleton<IAuthorizationHandler, ClaimsRequirementHandler>(); ;
+            services.AddSingleton<IAuthorizationHandler, ClaimsRequirementHandler>();
 
             // Application
             services.AddSingleton(Mapper.Configuration);
@@ -48,6 +48,7 @@ namespace ChiTrung.Infra.CrossCutting.IoC
             services.AddScoped<IAtmAppService, AtmAppService>();
             services.AddScoped<IDepositAppService, DepositAppService>();
             services.AddScoped<IWithdrawalAppService, WithdrawalAppService>();
+            services.AddScoped<IGameEventsService, GameEventsService>();
 
             // Domain - Events
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
@@ -97,8 +98,10 @@ namespace ChiTrung.Infra.CrossCutting.IoC
             services.AddScoped<IAtmRepository, AtmRepository>();
             services.AddScoped<IDepositRepository, DepositRepository>();
             services.AddScoped<IWithdrawalRepository, WithdrawalRepository>();
+            services.AddScoped<IGameEventsRepository, GameEventsRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ChiTrungContext>();
+            services.AddScoped<TigersContext>();
 
             // Infra - Data EventSourcing
             services.AddScoped<IEventStoreRepository, EventStoreSQLRepository>();

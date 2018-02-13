@@ -15,6 +15,7 @@ namespace ChiTrung.Application.AutoMapper
             CreateMap<Atm, AtmViewModel>();
             CreateMap<Deposit, DepositViewModel>();
             CreateMap<Withdrawal, WithdrawalViewModel>();
+            CreateMap<GameEvents, GameEventsViewModel>();
         }
     }
 }

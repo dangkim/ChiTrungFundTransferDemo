@@ -23,7 +23,8 @@ namespace ChiTrung.Infra.Test.Customers
         public Mock<IMediatorHandler> MediatorMock { get; set; }
         public Mock<IUnitOfWork> MockUnitWork { get; set; }
         public Mock<DomainNotificationHandler> DomainNotificationMock { get; set; }
-        public ChiTrungContext _context;
+        //public ChiTrungContext _context;
+        public TigersContext _context;
         public WithdrawalRepository _withdrawalRepository;
         public DepositRepository _depositRepository;
         public AccountRepository _accountRepository;
@@ -43,7 +44,8 @@ namespace ChiTrung.Infra.Test.Customers
             var witCode = "297fba37-4c11-4315-8a8f-02f0d5351925";
             var fundTransferCommand = new FundTransferCommand(witCode, "8123", "3212", DateTime.Now, cusId, 450, null);
             var withdrawal = new Withdrawal(fundTransferCommand.WitCode, fundTransferCommand.AccCode, fundTransferCommand.TransactionDate, fundTransferCommand.Amount, fundTransferCommand.AtmCode);
-            _context = new ChiTrungContext();
+            //_context = new ChiTrungContext();
+            _context = new TigersContext();
             _withdrawalRepository = new WithdrawalRepository(_context);
 
             // Act
@@ -64,7 +66,8 @@ namespace ChiTrung.Infra.Test.Customers
             var withdrawal = new Withdrawal(fundTransferCommand.WitCode, fundTransferCommand.AccCode, fundTransferCommand.TransactionDate, fundTransferCommand.Amount, fundTransferCommand.AtmCode);
             var deposit = new Deposit(fundTransferCommand.ToAccCode, fundTransferCommand.TransactionDate, fundTransferCommand.CusId, fundTransferCommand.Amount, fundTransferCommand.WitCode);
 
-            _context = new ChiTrungContext();
+            //_context = new ChiTrungContext();
+            _context = new TigersContext();
             _withdrawalRepository = new WithdrawalRepository(_context);
             _depositRepository = new DepositRepository(_context);
             _accountRepository = new AccountRepository(_context);

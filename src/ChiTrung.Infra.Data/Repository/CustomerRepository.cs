@@ -8,7 +8,7 @@ namespace ChiTrung.Infra.Data.Repository
 {
     public class CustomerRepository : Repository<Customer>, ICustomerRepository
     {
-        public CustomerRepository(ChiTrungContext context)
+        public CustomerRepository(TigersContext context)
             : base(context)
         {
 

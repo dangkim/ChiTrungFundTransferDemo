@@ -8,7 +8,7 @@ namespace ChiTrung.Infra.Data.Repository
 {
     public class WithdrawalRepository : Repository<Withdrawal>, IWithdrawalRepository
     {
-        public WithdrawalRepository(ChiTrungContext context)
+        public WithdrawalRepository(TigersContext context)
             : base(context)
         {
 

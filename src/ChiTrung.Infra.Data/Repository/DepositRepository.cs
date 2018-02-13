@@ -8,7 +8,7 @@ namespace ChiTrung.Infra.Data.Repository
 {
     public class DepositRepository : Repository<Deposit>, IDepositRepository
     {
-        public DepositRepository(ChiTrungContext context)
+        public DepositRepository(TigersContext context)
             : base(context)
         {
 

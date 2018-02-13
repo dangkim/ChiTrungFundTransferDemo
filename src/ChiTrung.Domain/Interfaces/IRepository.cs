@@ -7,6 +7,7 @@ namespace ChiTrung.Domain.Interfaces
     {
         void Add(TEntity obj);
         TEntity GetById(Guid id);
+        TEntity GetById(long id);
         IQueryable<TEntity> GetAll();
         void Update(TEntity obj);
         void Remove(Guid id);
