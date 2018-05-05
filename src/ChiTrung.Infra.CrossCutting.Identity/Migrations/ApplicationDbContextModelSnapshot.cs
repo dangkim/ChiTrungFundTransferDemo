@@ -53,6 +53,8 @@ namespace ChiTrung.Infra.CrossCutting.Identity.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256);
 
+                    b.Property<bool>("IsStop");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
